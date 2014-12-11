@@ -1,0 +1,259 @@
+//	HOME & NAVIGATION	//
+#mobile-nav {
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	line-height: 150%;
+	li {
+		padding: 10px 5px;
+		a {
+			font-weight: 200;
+			color: $white_text;
+			&:hover {
+			color: $accent_green;
+		}
+		}
+	}
+	.open a {
+		background-color: $primary_color_highlight;
+	}
+}
+.container > .navbar-header {
+	margin-left: 0;
+}
+header.container {
+	position: relative;
+	background: url("../imgs/landing.jpg") center center no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	svg {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		fill: white;
+	}
+	#header_quote_animation {
+		@include centered;;
+		color: white;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+#welcome {
+	font-weight: light;
+	text-align: center;
+	line-height: 180%;
+	padding: 15px;
+	margin: 50px 10px 10px;
+}
+#welcome_header {
+		line-height: 150%;
+		margin-bottom: 40px;
+		font-weight: light;
+	}
+#welcome p {
+	color: #999;
+	margin: 50px 0px 30px;;
+	@include rem(18);
+}
+#welcome_accent {
+	color: $accent_green;
+}
+#welcome_link {
+	clear: both;
+	text-transform: uppercase;
+	margin: 20px 0;
+	i.fa {
+		display: none;
+		color: white;
+		-webkit-transform: scale(.5, .5);
+		-moz-transform: scale(.5,.5);
+		-o-transform: scale(.5,.5);
+		transform: scale(.5,.5);
+	}
+	a {
+		@include rem(19);
+		letter-spacing: 0.15em;
+		display: block;
+		padding: 10px 0;
+		margin: 20px auto;
+		border: 1px solid black;
+		max-width: 210px;
+		&:hover {
+			@include transition(all, 1.5s, ease, 0);;
+			color: white;
+		}
+		span {
+			margin-right: 20px;
+			@include transition(-webkit-transform, 2s, ease, 0);;
+		}
+	}
+}
+#welcome a:hover i.fa {
+	display: inline-block;
+	-webkit-transform: scale(2,2);
+	-moz-transform: scale(2,2);
+	-o-transform: scale(2,2);
+	transform: scale(2, 2);
+	@include transition(-webkit-transform, 1.5s, ease-in-out, 0);;
+	}
+#welcome_link_purchase a {
+	&:hover {
+		background-color: $primary_color;
+		border-color: $primary_color;
+		#welcome_link_purchase_text {
+			-webkit-transform: transalteX(55px);
+			@include transition(-webkit-transform, 2s, ease, 0);
+		}
+	}
+}
+#welcome_link_twitter a {
+	&:hover {
+		background-color: $secondary_color;
+		border-color: $secondary_color;
+		span {
+			-webkit-transform: translateX(-5px);
+			@include transition(-webkit-transform, 2s, ease, 0);
+		}
+	}
+}
+@media screen and (min-width: 500px) {
+	#welcome_link a {
+		min-width: 150px;
+	}
+}
+
+//  HOME PAGE PORTFOLIO SECTION  //
+
+#portfolio {
+
+}
+
+#portfolio_flexbox_container {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+#portfolio_flexbox_container .wrap {
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	img {
+		-webkit-flex-grow: 1;
+		display: block;
+		padding: 0;
+		margin: 0;
+		-webkit-transform: scale(1);
+		@include transition(-webkit-transform, .5s, ease-in, 0);;
+	}
+	&:hover {
+		img {
+			-webkit-transform: scale(1.3);
+			@include transition(-webkit-transform, .25s, ease-in, 0);
+		}
+	}
+}
+.portfolio_widget_title, .portfolio_widget_title_animation p{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		opacity: 0;
+	}
+.portfolio_widget_title {
+		z-index: 60;
+		height: 100%;
+		top: -20px;	
+		letter-spacing: 0.15em;
+		-webkit-transform: scale(1);
+		@include transition(opacity, 1.5s, linear, 2s);;
+		@include transition(background-color, .5s, ease-in, 0);;
+		&:hover {
+			opacity: 1;
+			background-color: $primary_background;
+			-webkit-transform: scale(1.3);
+		}
+	}
+.portfolio_widget_title_animation p {
+		top: 45%;
+		left: 0;
+		-webkit-transform: scale(.5);
+		@include transition(color, 1.5s, ease-in, 3s);;
+		@include transition(opacity, 1.5s, linear, 3s);;
+		@include transition(-webkit-transform, .5s, ease-in, 0);;
+		&:hover {
+			opacity: 1;
+			color: white;
+			-webkit-transform: scale(1.1);
+			@include rem(19);;
+		}
+	}
+
+//	SERVICES  //
+.services_row {
+	margin: 0;
+}
+.service_widget {
+	margin: 0;
+	padding: 0;
+	padding: 175px 0;
+	position: relative;
+	text-align: center;
+	h4 {
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		@include rem(20);
+	}
+}
+
+.service_widget_container {
+	position: absolute;
+	@include centered;;
+}
+#service_first_widget {
+	background: #666;
+}
+#service_second_widget {
+	background: #313139;
+	color: white;
+}
+#service_third_widget {
+	background: #de5f4c;
+	color: white;
+}
+#service_fourth_widget {
+	background: #ccc;
+}
+.service_widget_icon {
+	position: relative;
+	margin: 0 auto;
+	border-radius: 50%;
+	height: 130px;
+	width: 130px;
+	color: white;
+	@include rem(48);
+	background: #28282e;
+	text-align: center;
+}
+.service_widget_icon i {
+	color: white;
+	@include centered;;
+}
+
+.blog_thumb {
+	width: 50%;
+	height: 100%;
+}
+.blog_thumb img {
+	min-height: 115px;
+	max-height: 100%;
+	width: auto;
+	display: block;
+}
