@@ -3,33 +3,37 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>theone</title>
-    <meta name="description" content="">
+    <title>theOne</title>
+    <meta name="description" content="Creative portfolio site">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,400,300,500' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
     
-    
-    <link rel="stylesheet" href="styles/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,400,300,500' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script async src="bower_components/modernizr/modernizr.js"></script>
+    <script async src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <!-- endbuild -->
 </head>
 <body>
+<div class="loader"></div>
     <!--[if lt IE 8]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+
     <!--Site Navigation-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="mobile-nav">
         <div class="container">
@@ -79,14 +83,14 @@
         <div id="welcome_link">
             <div id="welcome_link_purchase">
                 <a href="#">
-                    <i class="fa fa-external-link" id="external_link"></i>
+                    <i class="fa fa-external-link fadeIn" id="external_link"></i>
                     <span id="welcome_link_purchase_text">Buy theONE</span>
                 </a>
             </div>
             <div id="welcome_link_twitter">
                 <a href="#twitter">
                     <span>Our Twitter </span>
-                    <i class="fa fa-twitter-square"></i>
+                    <i class="fa fa-twitter-square fadeIn"></i>
                 </a>        
             </div>
         </div>
@@ -221,12 +225,13 @@
 
             <!--#service_fourth_widget-->
             <div class="service_widget col-xs-12 col-sm-6 col-md-6 col-lg-6" id="service_fourth_widget">
-                <div class="service_widget_container">
-                    <div class="service_widget_icon">
-                        <i class="fa fa-heart"></i>
-                    </div>
-                    <h4>Design</h4>
-                    <p>Magins. Scelerisque et pulvinar eros tempor, mattis acru auctor</p>
+                <div class="service_animation_container">
+                    <div class=" animation">
+              <div class="small-3 columns service_widget_animations" id="service_animation_one"></div>
+              <div class="small-3 columns service_widget_animations" id="service_animation_two"></div>
+              <div class="small-3 columns service_widget_animations" id="service_animation_three"></div>
+              <div class="small-3 columns service_widget_animations" id="service_animation_four"></div>
+            </div>
                 </div>
             </div>
         </div>
@@ -237,21 +242,25 @@
     <!-- Latest Blogs Section-->
     <section id="blog">
         <div class="container section_heading">
-            <h1>Latest Blog</h1>
+            <h1>Latest Blogs</h1>
             <h3>Our latest blog list</h3>
         </div>
     
         <!--Blog Entry-->
-        <div class="row">
+        <div class="row" id="blog_entry_row">
             <div class="blog_entry col-xs-6 col-sm-6 col-md-3 col-lg3">
                 <div class="blog_thumb">
                     <span class="wrap">
                         <a href="#"><img src="imgs/shoes@800x480.jpg" alt=""></a>
                     </span>
                 </div>
-                <div class="blog_thumb_header">
-                  <a href="#"><h5>Slider Fullwidth</h5></a>
+                <div class="blog_thumb_filter">
+                    <h5>Slider Fullwidth</h5>
                 </div>
+                    <div class="blog_thumb_header">
+                      <a href="#"><h5>Slider Fullwidth</h5></a>
+                    </div>
+
             </div>
                 
             <!--Blog Entry-->
@@ -342,7 +351,7 @@
             <div class="blog_entry col-xs-6 col-sm-6 col-md-3 col-lg3">
                 <div class="blog_thumb">
                     <span class="wrap">
-                        <a href="#"><img src="imgs/bug@400.jpg" alt=""></a>
+                        <a href="#"><img src="imgs/bug@800x480.jpg" alt=""></a>
                     </span>
                 </div>
                 <div class="blog_thumb_header">
@@ -390,7 +399,7 @@
             <div class="blog_entry col-xs-6 col-sm-6 col-md-3 col-lg3">
                 <div class="blog_thumb">
                     <span class="wrap">
-                        <a href="#"><img src="imgs/bfast@400.jpg" alt=""></a>
+                        <a href="#"><img src="imgs/bfast@680x408.jpg" alt=""></a>
                     </span>
                 </div>
                 <div class="blog_thumb_header">
@@ -423,7 +432,7 @@
             <div class="blog_entry col-xs-6 col-sm-6 col-md-3 col-lg3">
                 <div class="blog_thumb">
                     <span class="wrap">
-                        <a href="#"><img src="imgs/mountain@800.jpg" alt=""></a>
+                        <a href="#"><img src="imgs/mountain@800x480.jpg" alt=""></a>
                     </span>
                 </div>
                 <div class="blog_thumb_header">
@@ -436,13 +445,119 @@
     </section>
 
     <!--Team-->
-    section#team>
+    <section id="about">
+        <div class="container section_heading">
+            <h1>Our Team</h1>
+            <h3>About Us</h3>
+        </div>
+        
+        <div class="row_team">
+
+        <div class="team_member_widget_wrap col-sm-12 col-md-6 col-lg-6">
+            <div class="team_member_widget">
+                <h1 class="team_member_widget_text">
+                    <a href="member1.html" class="team_member_name">Forest Grimaldo</a>
+                    <br>
+                    <hr>
+                    <span class="team_member_position">CEO<br>
+                        <a href="mailto:msmalloryporche@gmail.com?subject:Hello20%There" class="team_member_email">forest.grimaldo@gmail.com</a>
+                        <br>
+                        +000 123 4567</br>
+                        <br>
+                        <br>
+                    </span>
+                    <ul class="icons">
+                        <li><i class="fa fa-github-square"></i></li>
+                        <li><i class="fa fa-twitter-square"></i></li>
+                        <li><i class="fa fa-facebook-square"></i></li>
+                    </ul>
+                </h1>
+            </div>
+            <div class="team_member_widget_img">
+                <img src="imgs/sunglasses.png" alt="readhead">
+            </div>
+        </div>
+
+        <div class="team_member_widget_wrap col-sm-12 col-md-6 col-lg-6">
+            <div class="team_member_widget">
+                <h1 class="team_member_widget_text">
+                    <a href="member1.html" class="team_member_name">Briana Bieker</a>
+                    <br>
+                    <hr>
+                    <span class="team_member_position">Partner<br>
+                        <a href="mailto:msmalloryporche@gmail.com?subject:Hello20%There" class="team_member_email">briana.bieker@gmail.com</a>
+                        <br>
+                        +000 123 4567</br>
+                        <br>
+                        <br>
+                    </span>
+                    <ul class="icons">
+                        <li><i class="fa fa-tumblr-square"></i></li>
+                        <li><i class="fa fa-pinterest-square"></i></li>
+                        <li><i class="fa fa-facebook-square"></i></li>
+                    </ul>
+                </h1>
+            </div>
+            <div class="team_member_widget_img">
+                <img src="imgs/redhead.jpg" alt="readhead">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container section_heading">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h1>Drop us a line</h1>
+                    <p>The simple contact form comes packed within this theme, and is supported to meet your further requirements</p>
+                    <p>Address: 175 Fifth Avenue <br> New York, NY 10010</p>
+                    <p>Phone: +000 123 4567 Fax: +000 123 4567</p>
+                    <p>Email: msmalloryporche@gmail.com</p>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6" id="contact_us_form">
+                     <form action="contact-form" class="contact_form" method="POST">
+                <p><input type="text" name="user_name" placeholder="NAME" id="user_name"></p>
+                <p><input type="text" name="user_email" id="email" placeholder="EMAIL"></p>
+                <p><textarea placeholder="YOUR REVIEW"></textarea></p>
+                <div class="btn_area"><input type="submit" id="send_form" name="send_form" value="SEND"></div>
+            </form>
+                
+                </div>
+        </div>
+            
+        </div>
+        <div >
+           
+        </div>
+    </section>
+
+    <section id="footer">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100" style="height: 143px;">
+            <polygon points="0,0 50,98 100,0 100,100 0,100" id="mask">
+            </polygon>
+        </div>   
+        
+        <a href="http://www.msmalloryporche.com"><h1>LOGO</h1></a>
+
+        <div class="row">
+          <div class="small-12 medium-12 large-12 centered columns'" id="footer_social_media_links">
+            <a href="http://www.twitter.com" class="signature">Twitter</a> 
+            <a href="http://www.facebook.com">Facebook</a>
+            <a href="http://www.behance.com">Behance</a>
+            <a href="http://www.flickr.com">Flickr</a>
+          </div>
+        <p>
+            <br> Hand coded wtih <i class="fa fa-heart"></i> by <a href="http://www.msmalloryporche.com">Mallory Porch&eacute</a> <br> <span id="site_design">Site design by <a href="www.ximudesign.com">XIMU Design</a><br><br>Copyright &copy 2014 </p> </span>
+        </div>
+    </section>
+
     </main>
-      
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script async src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
@@ -462,7 +577,19 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+    <!-- Animate on scroll -->
+    <script>
+    $(window).scroll(function() {
+        $('#service_fourth_widget').each(function(){
+        var imagePos = $(this).offset().top;
 
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $('.service_widget_animations').addClass("pullUp");
+            }
+        });
+    });
+</script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
