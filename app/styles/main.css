@@ -4960,11 +4960,11 @@ html, body, .container {
   padding: 0; }
 
 html {
-  font-family: "Raleway";
   font-size: 16px; }
 
 body {
-  font-family: "Raleway"; }
+  font-family: "Raleway";
+  font-weight: 300; }
 
 @media screen and (max-width: 900px) {
   html {
@@ -4976,11 +4976,13 @@ body {
     font-size: 14px; }
  }
 
-a {
+a, a:hover, a:visited {
   color: black;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: none; }
+  text-decoration: none;
+  text-transform: uppercase; }
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 300; }
 
 .section_heading {
   margin: 60px 0 20px;
@@ -5041,7 +5043,6 @@ header.container {
     text-align: center; }
 
 #welcome {
-  font-weight: 300;
   text-align: center;
   line-height: 180%;
   padding: 15px;
@@ -5058,25 +5059,22 @@ header.container {
   margin: 50px 0px 30px;
   font-size: 1.125rem; }
 
-#welcome_accent {
+.accent {
   color: #00A65C; }
 
 #welcome_link {
   clear: both;
-  text-transform: uppercase;
   margin: 20px 0; }
-  #welcome_link a {
+  #welcome_link div a {
     font-size: 1.1875rem;
     letter-spacing: 0.15em;
     display: block;
     padding: 10px 0;
-    margin: 20px auto;
+    margin: 10px auto;
     border: 1px solid black;
     max-width: 210px; }
-    #welcome_link a:hover {
+    #welcome_link div a:hover {
       color: white;
-      background-color: #313139;
-      border-color: #313139;
       -webkit-transition-property: background-color;
       -moz-transition-property: background-color;
       -ms-transition-property: background-color;
@@ -5097,10 +5095,12 @@ header.container {
       -ms-transition-delay: 0;
       -o-transition-delay: 0;
       transition-delay: 0; }
-
-#welcome_link_twitter a:hover {
-  background-color: #FA6746;
-  border-color: #FA6746; }
+  #welcome_link div:first-of-type a:hover {
+    background-color: #313139;
+    border-color: #313139; }
+  #welcome_link div:last-of-type a:hover {
+    background-color: #FA6746;
+    border-color: #FA6746; }
 
 @media screen and (min-width: 500px) {
   #welcome_link a {
@@ -5119,6 +5119,7 @@ header.container {
   position: relative;
   text-align: center; }
   #portfolio_flexbox_container .wrap img {
+    width: 100%;
     -webkit-flex-grow: 1;
     display: block;
     padding: 0;

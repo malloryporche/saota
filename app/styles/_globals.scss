@@ -8,11 +8,11 @@ html, body, .container {
 
 //  DOCUMENT LEVEL FONT-SIZE ADJUSTMENTS  //
 html {
-	font-family: "Raleway";
 	font-size: $base_html_font_size;
 }
 body {
 	font-family: "Raleway";
+	font-weight: 300;
 }
 @media screen and (max-width: 900px) {
 	html { font-size: 16px; }
@@ -23,14 +23,14 @@ body {
 }
 
 // TYPOGRAPHY 
-a {
+a, a:hover, a:visited {
 	color: black;
 	text-decoration: none;
-	&:hover {
-		text-decoration: none;
-	}
+	text-transform: uppercase;
 }
-
+h1, h2, h3, h4, h5, h6, p {
+	font-weight: 300;
+}
 .section_heading {
 	margin: 60px 0 20px;
 	text-align: center;

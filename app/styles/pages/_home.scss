@@ -46,7 +46,6 @@ header.container {
 }
 
 #welcome {
-	font-weight: 300;
 	text-align: center;
 	line-height: 180%;
 	padding: 15px;
@@ -63,38 +62,34 @@ header.container {
 	margin: 50px 0px 30px;;
 	@include rem(18);
 }
-#welcome_accent {
+.accent {
 	color: $accent_green;
 }
 #welcome_link {
 	clear: both;
-	text-transform: uppercase;
 	margin: 20px 0;
-	a {
+	div a {
 		@include rem(19);
 		letter-spacing: 0.15em;
 		display: block;
 		padding: 10px 0;
-		margin: 20px auto;
+		margin: 10px auto;
 		border: 1px solid black;
 		max-width: 210px;
 		&:hover {
 			color: white;
-			background-color: $primary_color;
-			border-color: $primary_color;
 			@include transition(background-color, 0.5s, ease-in-out, 0);;
 		}
 	}
-}
-
-#welcome_link_twitter a {
-	&:hover {
+	div:first-of-type a:hover {
+		background-color: $primary_color;
+		border-color: $primary_color;
+	}
+	div:last-of-type a:hover {
 		background-color: $secondary_color;
 		border-color: $secondary_color;
-
 	}
 }
-
 
 @media screen and (min-width: 500px) {
 	#welcome_link a {
@@ -121,6 +116,7 @@ header.container {
 	position: relative;
 	text-align: center;
 	img {
+		width: 100%;
 		-webkit-flex-grow: 1;
 		display: block;
 		padding: 0;
