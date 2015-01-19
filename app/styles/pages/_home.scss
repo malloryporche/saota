@@ -17,11 +17,18 @@
 		background-color: transparent;
 	}
 }
-.container > .navbar-header {
+.container-fluid > .navbar-header {
+	margin-right: 0;
 	margin-left: 0;
 }
+@media screen and (min-width: 769px) {
+	.container-fluid > .navbar-header {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
 
-header.container {
+header.container-fluid {
 	position: relative;
 	background: url("../imgs/landing.jpg") center center no-repeat;
 	background-attachment: fixed;
@@ -30,6 +37,7 @@ header.container {
 	-ms-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	height: 100%;
 	svg {
 		width: 100%;
 		position: absolute;
@@ -73,9 +81,9 @@ header.container {
 		letter-spacing: 0.15em;
 		display: block;
 		padding: 10px 0;
-		margin: 10px auto;
+		margin: 15px auto;
 		border: 1px solid black;
-		max-width: 210px;
+		width: 210px;
 		&:hover {
 			color: white;
 			@include transition(background-color, 0.5s, ease-in-out, 0);;
@@ -91,9 +99,10 @@ header.container {
 	}
 }
 
-@media screen and (min-width: 500px) {
-	#welcome_link a {
-		min-width: 150px;
+@media screen and (min-width: 768px) {
+	#welcome_link div a {
+		display: inline-block;
+		margin: 10px;
 	}
 }
 
@@ -167,13 +176,18 @@ p.portfolio_widget_title_animation {
 	}
 
 //	SERVICES  //
+#services .row {
+	height: auto !important;
+}
 .services_row {
 	margin: 0;
+	height: 600px;
+	display: table;
+	width: 100%;
 }
 .service_widget {
+
 	margin: 0;
-	padding: 0;
-	padding: 175px 0;
 	position: relative;
 	text-align: center;
 	h4 {
@@ -185,6 +199,8 @@ p.portfolio_widget_title_animation {
 
 .service_widget_container {
 	@include centered;;
+	width: 100%;
+	padding: 60px 40px;
 }
 #service_first_widget {
 	background: #666;

@@ -4953,7 +4953,7 @@ button.close {
 
 /* DEFINE VARIABLES & MIXINS */
 /*  GLOBAL STYLES  */
-html, body, .container {
+html, body, .container-fluid {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -5011,10 +5011,17 @@ h1, h2, h3, h4, h5, h6, p {
   #mobile-nav .open a {
     background-color: transparent; }
 
-.container > .navbar-header {
+.container-fluid > .navbar-header {
+  margin-right: 0;
   margin-left: 0; }
 
-header.container {
+@media screen and (min-width: 769px) {
+  .container-fluid > .navbar-header {
+    margin-left: 15px;
+    margin-right: 15px; }
+ }
+
+header.container-fluid {
   position: relative;
   background: url("../imgs/landing.jpg") center center no-repeat;
   background-attachment: fixed;
@@ -5022,14 +5029,15 @@ header.container {
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
-  header.container svg {
+  background-size: cover;
+  height: 100%; }
+  header.container-fluid svg {
     width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
     fill: white; }
-  header.container #header_quote_animation {
+  header.container-fluid #header_quote_animation {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -5070,9 +5078,9 @@ header.container {
     letter-spacing: 0.15em;
     display: block;
     padding: 10px 0;
-    margin: 10px auto;
+    margin: 15px auto;
     border: 1px solid black;
-    max-width: 210px; }
+    width: 210px; }
     #welcome_link div a:hover {
       color: white;
       -webkit-transition-property: background-color;
@@ -5102,9 +5110,10 @@ header.container {
     background-color: #FA6746;
     border-color: #FA6746; }
 
-@media screen and (min-width: 500px) {
-  #welcome_link a {
-    min-width: 150px; }
+@media screen and (min-width: 768px) {
+  #welcome_link div a {
+    display: inline-block;
+    margin: 10px; }
  }
 
 #portfolio_flexbox_container {
@@ -5295,13 +5304,17 @@ p.portfolio_widget_title_animation {
   -o-transition-delay: 0;
   transition-delay: 0; }
 
+#services .row {
+  height: auto !important; }
+
 .services_row {
-  margin: 0; }
+  margin: 0;
+  height: 600px;
+  display: table;
+  width: 100%; }
 
 .service_widget {
   margin: 0;
-  padding: 0;
-  padding: 175px 0;
   position: relative;
   text-align: center; }
   .service_widget h4 {
@@ -5317,7 +5330,9 @@ p.portfolio_widget_title_animation {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 60px 40px; }
 
 #service_first_widget {
   background: #666; }
