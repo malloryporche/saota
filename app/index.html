@@ -520,7 +520,7 @@
         </div>
         
         <div class="col-sm-12 col-md-6 col-lg-6" id="contact_us_form">
-            <form action="contact-form" class="contact_form" method="POST">
+            <form action="mail.php" class="contact_form" method="POST">
                 <p><input type="text" name="user_name" placeholder="NAME" id="user_name"></p>
                 <p><input type="text" name="user_email" id="email" placeholder="EMAIL"></p>
                 <p><textarea name="message" placeholder="YOUR REVIEW"></textarea></p>
@@ -595,5 +595,20 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+    <script>
+    $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+}); </script>
 </body>
 </html>
