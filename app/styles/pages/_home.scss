@@ -89,13 +89,17 @@ header.container-fluid {
 			@include transition(background-color, 0.5s, ease-in-out, 0);;
 		}
 	}
-	div:first-of-type a:hover {
-		background-color: $primary_color;
-		border-color: $primary_color;
+	div a:first-of-type {
+		&:hover {
+			background-color: $primary_color;
+			border-color: $primary_color;
+		}
 	}
-	div:last-of-type a:hover {
-		background-color: $secondary_color;
-		border-color: $secondary_color;
+	div a:last-of-type {
+		&:hover {
+			background-color: $secondary_color;
+			border-color: $secondary_color;
+		}
 	}
 }
 
@@ -117,10 +121,10 @@ header.container-fluid {
 	-webkit-flex-direction: row;
 	-webkit-flex-wrap: wrap;
 	align-items: flex-start;
+	justify-content: center;
 }
 
 #portfolio_flexbox_container .wrap {
-	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
@@ -181,13 +185,14 @@ p.portfolio_widget_title_animation {
 }
 .services_row {
 	margin: 0;
-	height: 600px;
+	min-height: 400px;
 	display: table;
 	width: 100%;
 }
 .service_widget {
-
+	min-height: 400px;
 	margin: 0;
+	padding: 0;
 	position: relative;
 	text-align: center;
 	h4 {
@@ -200,7 +205,7 @@ p.portfolio_widget_title_animation {
 .service_widget_container {
 	@include centered;;
 	width: 100%;
-	padding: 60px 40px;
+	padding: 65px 40px;
 }
 #service_first_widget {
 	background: #666;
@@ -241,7 +246,7 @@ p.portfolio_widget_title_animation {
 #service_fourth_widget {
 	position: relative;
 	padding: 0;
-	min-height: 350px;
+	min-height: 400px;
 	height: 100%;
 }
 .row .animation {
@@ -395,7 +400,7 @@ p.portfolio_widget_title_animation {
 		margin: 0;
 		padding: 20px 0;
 		text-align: center;
-		@include rem(22);;
+		@include rem(20);;
 		font-weight: lighter;
 	}
 }
@@ -505,7 +510,7 @@ p.portfolio_widget_title_animation {
 		background-color: $primary_background;
 		z-index: 1000;
 		padding: 65px 20px;
-		margin: 45px 0;
+		margin: 0 0 45px;
 	}
 	input[type="text"], textarea {
 		margin: 10px 0;

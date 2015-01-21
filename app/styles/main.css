@@ -4985,7 +4985,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 300; }
 
 .section_heading {
-  margin: 60px 0 20px;
+  margin: 60px auto 20px;
   text-align: center; }
   .section_heading > h1 {
     font-size: 1.75rem;
@@ -5103,10 +5103,10 @@ header.container-fluid {
       -ms-transition-delay: 0;
       -o-transition-delay: 0;
       transition-delay: 0; }
-  #welcome_link div:first-of-type a:hover {
+  #welcome_link div a:first-of-type:hover {
     background-color: #313139;
     border-color: #313139; }
-  #welcome_link div:last-of-type a:hover {
+  #welcome_link div a:last-of-type:hover {
     background-color: #FA6746;
     border-color: #FA6746; }
 
@@ -5120,10 +5120,10 @@ header.container-fluid {
   display: -webkit-flex;
   -webkit-flex-direction: row;
   -webkit-flex-wrap: wrap;
-  align-items: flex-start; }
+  align-items: flex-start;
+  justify-content: center; }
 
 #portfolio_flexbox_container .wrap {
-  margin: 0 auto;
   overflow: hidden;
   position: relative;
   text-align: center; }
@@ -5309,12 +5309,14 @@ p.portfolio_widget_title_animation {
 
 .services_row {
   margin: 0;
-  height: 600px;
+  min-height: 400px;
   display: table;
   width: 100%; }
 
 .service_widget {
+  min-height: 400px;
   margin: 0;
+  padding: 0;
   position: relative;
   text-align: center; }
   .service_widget h4 {
@@ -5332,7 +5334,7 @@ p.portfolio_widget_title_animation {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100%;
-  padding: 60px 40px; }
+  padding: 65px 40px; }
 
 #service_first_widget {
   background: #666; }
@@ -5416,7 +5418,7 @@ p.portfolio_widget_title_animation {
 #service_fourth_widget {
   position: relative;
   padding: 0;
-  min-height: 350px;
+  min-height: 400px;
   height: 100%; }
 
 .row .animation {
@@ -5685,7 +5687,7 @@ p.portfolio_widget_title_animation {
     margin: 0;
     padding: 20px 0;
     text-align: center;
-    font-size: 1.375rem;
+    font-size: 1.25rem;
     font-weight: lighter; }
 
 .blog_thumb_filter h5 {
@@ -6007,7 +6009,7 @@ p.portfolio_widget_title_animation {
   background-color: #2C2F36;
   z-index: 1000;
   padding: 65px 20px;
-  margin: 45px 0; }
+  margin: 0 0 45px; }
 #contact input[type="text"], #contact textarea {
   margin: 10px 0;
   border: none;
