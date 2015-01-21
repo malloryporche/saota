@@ -1,3 +1,10 @@
+$(document).ready(function() {
+
+$('body').css('display', 'none');
+
+$('body').fadeIn(1000);
+
+
 //  QUOTE ANIMATION  //
 
 	//DEFINE VARIABLES//
@@ -19,6 +26,3 @@ var quoteShow = function(quote) {
 	quote.show('slow');
 }
 
-quoteFade(quote);
-.delay(5000).quoteFade(quote2);
-quoteShow();
