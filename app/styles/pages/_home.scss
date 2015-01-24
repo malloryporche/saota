@@ -17,20 +17,20 @@
 		background-color: transparent;
 	}
 }
-.container-fluid > .navbar-header {
+.container > .navbar-header {
 	margin-right: 0;
 	margin-left: 0;
 }
 @media screen and (min-width: 769px) {
-	.container-fluid > .navbar-header {
+	.container > .navbar-header {
 		margin-left: 15px;
 		margin-right: 15px;
 	}
 }
 
-header.container-fluid {
+header.container {
 	position: relative;
-	background: url("../imgs/slide/slider$2.jpg") center center no-repeat;
+	background: url("../imgs/work/wk-5-mx.jpg") center center no-repeat;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -136,6 +136,9 @@ header.container-fluid {
 		img {
 			-webkit-transform: scale(1.3);
 			@include transition(-webkit-transform, .25s, ease-in, 0);
+		}
+		h2 {
+			opacity: 0.75;
 		}
 		p.portfolio_widget_title_animation {
 			opacity: 1;

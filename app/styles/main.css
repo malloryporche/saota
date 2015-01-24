@@ -4953,7 +4953,7 @@ button.close {
 
 /* DEFINE VARIABLES & MIXINS */
 /*  GLOBAL STYLES  */
-html, body, .container-fluid {
+html, body, .container {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -5011,19 +5011,19 @@ h1, h2, h3, h4, h5, h6, p {
   #mobile-nav .open a {
     background-color: transparent; }
 
-.container-fluid > .navbar-header {
+.container > .navbar-header {
   margin-right: 0;
   margin-left: 0; }
 
 @media screen and (min-width: 769px) {
-  .container-fluid > .navbar-header {
+  .container > .navbar-header {
     margin-left: 15px;
     margin-right: 15px; }
  }
 
-header.container-fluid {
+header.container {
   position: relative;
-  background: url("../imgs/slide/slider$2.jpg") center center no-repeat;
+  background: url("../imgs/work/wk-5-mx.jpg") center center no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -5031,7 +5031,7 @@ header.container-fluid {
   -o-background-size: cover;
   background-size: cover;
   height: 100%; }
-  header.container-fluid svg {
+  header.container svg {
     width: 100%;
     position: absolute;
     left: 0;
@@ -5165,6 +5165,8 @@ header.container-fluid {
     -ms-transition-delay: 0;
     -o-transition-delay: 0;
     transition-delay: 0; }
+  #portfolio_flexbox_container .wrap:hover h2 {
+    opacity: 0.75; }
   #portfolio_flexbox_container .wrap:hover p.portfolio_widget_title_animation {
     opacity: 1;
     color: white;
