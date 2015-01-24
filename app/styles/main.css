@@ -3414,7 +3414,7 @@ tbody.collapse.in {
   .navbar-inverse .navbar-nav > li > a {
     color: #9d9d9d; }
     .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-      color: #00A65C;
+      color: #c2d848;
       background-color: transparent; }
   .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     color: #fff;
@@ -5007,7 +5007,7 @@ h1, h2, h3, h4, h5, h6, p {
       font-weight: 200;
       color: #fff; }
       #mobile-nav li a:hover {
-        color: #00A65C; }
+        color: #c2d848; }
   #mobile-nav .open a {
     background-color: transparent; }
 
@@ -5057,7 +5057,7 @@ header.container {
   font-size: 1.125rem; }
 
 .accent {
-  color: #00A65C; }
+  color: #c2d848; }
 
 #welcome_link {
   clear: both;
@@ -5096,8 +5096,8 @@ header.container {
     background-color: #313139;
     border-color: #313139; }
   #welcome_link div a:last-of-type:hover {
-    background-color: #FA6746;
-    border-color: #FA6746; }
+    background-color: #FF512F;
+    border-color: #FF512F; }
 
 @media screen and (min-width: 768px) {
   #welcome_link div a {
@@ -6014,7 +6014,7 @@ p.portfolio_widget_title_animation {
   padding-bottom: 60px; }
 #contact input[type="text"]:focus, #contact textarea:focus {
   border: none;
-  border-bottom: 1px #00A65C solid;
+  border-bottom: 1px #c2d848 solid;
   outline-offset: 0;
   outline-color: transparent;
   outline-style: none;
@@ -6072,8 +6072,8 @@ p.portfolio_widget_title_animation {
   -o-transition-delay: 0;
   transition-delay: 0; }
 #contact input[type="submit"]:hover {
-  background-color: #FA6746;
-  border-color: #FA6746;
+  background-color: #FF512F;
+  border-color: #FF512F;
   color: white;
   -webkit-transition-property: background-color;
   -moz-transition-property: background-color;
@@ -6113,9 +6113,9 @@ p.portfolio_widget_title_animation {
   #footer p {
     padding: 20px 0 10px; }
     #footer p i {
-      color: #FA6746; }
+      color: #FF512F; }
     #footer p a:first-of-type {
-      color: #FA6746; }
+      color: #FF512F; }
   #footer #site_design {
     padding-top: 10px;
     color: #777; }
