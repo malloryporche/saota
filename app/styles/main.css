@@ -5023,7 +5023,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 header.container-fluid {
   position: relative;
-  background: url("../imgs/landing.jpg") center center no-repeat;
+  background: url("../imgs/slide/slider$2.jpg") center center no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -5037,18 +5037,6 @@ header.container-fluid {
     left: 0;
     bottom: 0;
     fill: white; }
-  header.container-fluid #header_quote_animation {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: white;
-    text-transform: uppercase;
-    text-align: center; }
 
 #welcome {
   text-align: center;
@@ -5063,8 +5051,9 @@ header.container-fluid {
   padding: 0 55px; }
 
 #welcome p {
+  max-width: 560px;
   color: #999;
-  margin: 50px 0px 30px;
+  margin: 50px auto 30px;
   font-size: 1.125rem; }
 
 .accent {

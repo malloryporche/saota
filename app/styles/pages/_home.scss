@@ -30,7 +30,7 @@
 
 header.container-fluid {
 	position: relative;
-	background: url("../imgs/landing.jpg") center center no-repeat;
+	background: url("../imgs/slide/slider$2.jpg") center center no-repeat;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -44,12 +44,6 @@ header.container-fluid {
 		left: 0;
 		bottom: 0;
 		fill: white;
-	}
-	#header_quote_animation {
-		@include centered;;
-		color: white;
-		text-transform: uppercase;
-		text-align: center;
 	}
 }
 
@@ -66,8 +60,9 @@ header.container-fluid {
 		padding: 0 55px;
 	}
 #welcome p {
+	max-width: 560px;
 	color: #999;
-	margin: 50px 0px 30px;;
+	margin: 50px auto 30px;
 	@include rem(18);
 }
 .accent {
