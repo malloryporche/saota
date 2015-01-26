@@ -6313,6 +6313,9 @@ p.portfolio_widget_title_animation {
   transition-delay: 0; }
 
 /*  PAGE: PORTFOLIO & GALLERY PAGES */
+header #slider_fullwidth {
+  padding: 0; }
+
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
@@ -6336,7 +6339,6 @@ p.portfolio_widget_title_animation {
   transition-delay: 0;
   opacity: 0;
   transition-property: opacity;
-  background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   width: 100%;
@@ -6346,7 +6348,6 @@ p.portfolio_widget_title_animation {
     padding: 0; }
 .carousel-fade .carousel-inner .active {
   opacity: 1;
-  border: 2px solid black;
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -ms-transition-property: opacity;

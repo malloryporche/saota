@@ -1,10 +1,13 @@
+header #slider_fullwidth {
+  padding: 0;
+}
+
 .carousel-fade {
   .carousel-inner {
     .item {
 	@include transition(opacity, 3.0s, ease-out, 0);;
       opacity: 0;
       transition-property: opacity;
-      background-attachment: fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	width: 100%;
@@ -17,7 +20,6 @@
 
     .active {
       opacity: 1;
-      border: 2px solid black;
       @include transition(opacity, 3.0s, ease,0);;
     }
 
