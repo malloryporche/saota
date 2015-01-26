@@ -55,7 +55,7 @@
 @mixin highlight($font_color) {
 	font-weight: 800;
 	color: $font_color;
-	@include transition(all, 1.2s, ease, 0);;
+	@include transition(all, 0.5s, ease, 0);;
 }
 //	VERTICALLY, HORIZONTALLY CENTERED CONTENT //
 @mixin centered {	

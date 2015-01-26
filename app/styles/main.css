@@ -5017,10 +5017,52 @@ h1, h2, h3, h4, h5, h6, p {
 
 .accent {
   text-transform: uppercase;
-  color: #c2d848; }
+  font-weight: 800;
+  color: #c2d848;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1.2s;
+  -moz-transition-duration: 1.2s;
+  -ms-transition-duration: 1.2s;
+  -o-transition-duration: 1.2s;
+  transition-duration: 1.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
 
 .highlight_accent {
-  color: #c2d848; }
+  font-weight: 800;
+  color: #c2d848;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1.2s;
+  -moz-transition-duration: 1.2s;
+  -ms-transition-duration: 1.2s;
+  -o-transition-duration: 1.2s;
+  transition-duration: 1.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
 
 #mobile-nav {
   text-transform: uppercase;
@@ -5136,7 +5178,48 @@ header.container {
     border: 1px solid black;
     width: 210px; }
     #welcome_link div a:hover {
+      font-weight: 800;
       color: white;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -ms-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 1.2s;
+      -moz-transition-duration: 1.2s;
+      -ms-transition-duration: 1.2s;
+      -o-transition-duration: 1.2s;
+      transition-duration: 1.2s;
+      -webkit-transition-timing-function: ease;
+      -moz-transition-timing-function: ease;
+      -ms-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
+      transition-timing-function: ease;
+      -webkit-transition-delay: 0;
+      -moz-transition-delay: 0;
+      -ms-transition-delay: 0;
+      -o-transition-delay: 0;
+      transition-delay: 0;
+      -webkit-transition-property: color;
+      -moz-transition-property: color;
+      -ms-transition-property: color;
+      -o-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      -ms-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease;
+      -moz-transition-timing-function: ease;
+      -ms-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
+      transition-timing-function: ease;
+      -webkit-transition-delay: 0;
+      -moz-transition-delay: 0;
+      -ms-transition-delay: 0;
+      -o-transition-delay: 0;
+      transition-delay: 0;
       -webkit-transition-property: background-color;
       -moz-transition-property: background-color;
       -ms-transition-property: background-color;
@@ -5185,7 +5268,27 @@ header.container {
       transition-delay: 0; }
   #welcome_link div a:last-of-type:hover {
     background-color: #FF512F;
-    border-color: #FF512F; }
+    border-color: #FF512F;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
     #welcome_link div a:last-of-type:hover span {
       font-weight: 800;
       color: #f39c12;
