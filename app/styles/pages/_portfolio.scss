@@ -106,13 +106,13 @@ a.carousel-control.right, a.carousel-control.left {
     padding-bottom: 55px;
   }
   p {
-    border-top: 2px solid $primary_color;
     padding-top: 20px;
     letter-spacing: 0.1em;
-     color: darkgray;
+    color: darkgray;
     &:first-of-type {
-    display: inline-block;
-    float: right;
+      padding-top: 50px;
+      display: inline-block;
+      float: right;
     &:first-letter {
       margin-top: -20px;
       margin-bottom: -40px;
@@ -123,5 +123,99 @@ a.carousel-control.right, a.carousel-control.left {
       float: left;
       }
     }
+  }
+}
+#gallery_info {
+  border-top: 2px solid $primary_color;
+  border-bottom: 2px solid $primary_color;
+  padding: 40px 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  h5 {
+    text-transform: uppercase;
+    padding-bottom: 0px;
+    margin-bottom: -2px;
+    color: $primary_color;
+  }
+  h6 {
+    color: gray;
+  }
+}
+div#social_media-share {
+  padding: 0;
+}
+div.soc-media-links {
+  padding: 0;
+  display: inline-block;
+  margin: 0 auto;
+  button {
+    display: block;
+    color: white;
+    border-radius: 3px;
+    margin: 30px auto;
+    padding: 5px 0;
+    width: 80%;
+  }
+}
+button#soc-fb {
+  background-color: #5975b1;
+  border-color: #5975b1;
+}
+button#soc-twtr {
+  background-color: #53c3ee;
+  border-color: #53c3ee;
+}
+button#soc-gp {
+  background-color: #d54e55;
+  border-color: #d54e55;
+}
+button#soc-pin {
+  background-color: #de4d35;
+  border-color: #de4d35;
+}
+.post-navigation {
+  display: block;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.2em;
+  background-color: #FFF;
+    a {
+      margin: 60px 0;
+      border: 1px solid $primary_color;
+      display: block;
+      color: $primary_color;
+      padding: 15px 10px;
+      @include transition(all, 1s, ease, 0);;
+      span.no-show {
+        display: none;
+      }
+      &:hover {
+        border: 1px solid $secondary_color;
+        background-color: $secondary_color;
+        @include transition(all, 1s, ease, 0);;
+        .post-navigation {
+          border-color: transparent;
+        }
+        span.no-show {
+          display: inline-block;
+          @include highlight(white);;
+        }
+        span:first-of-type {
+          display: none;
+        }
+      }
+  }
+}
+img.thumbnail {
+    margin: 0 auto 40px;
+  }
+@media screen and (min-width: 768px) {
+  div#social_media-share {
+    margin: 40px 0 0;
+    padding: 60px 0;
+    border-top: 2px solid $primary_color;
+  }
+  #gallery_info {
+    border-bottom: 2px solid transparent;
   }
 }

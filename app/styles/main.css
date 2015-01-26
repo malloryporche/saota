@@ -6485,9 +6485,11 @@ a.carousel-control.right, a.carousel-control.left {
   text-transform: uppercase;
   padding-bottom: 55px; }
 #portfolio-description-text p {
+  padding-top: 20px;
   letter-spacing: 0.1em;
   color: darkgray; }
   #portfolio-description-text p:first-of-type {
+    padding-top: 50px;
     display: inline-block;
     float: right; }
     #portfolio-description-text p:first-of-type:first-letter {
@@ -6519,6 +6521,150 @@ a.carousel-control.right, a.carousel-control.left {
       font-size: 6.25rem;
       display: inline-block;
       float: left; }
+
+#gallery_info {
+  border-top: 2px solid #313139;
+  border-bottom: 2px solid #313139;
+  padding: 40px 0;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+  #gallery_info h5 {
+    text-transform: uppercase;
+    padding-bottom: 0px;
+    margin-bottom: -2px;
+    color: #313139; }
+  #gallery_info h6 {
+    color: gray; }
+
+div#social_media-share {
+  padding: 0; }
+
+div.soc-media-links {
+  padding: 0;
+  display: inline-block;
+  margin: 0 auto; }
+  div.soc-media-links button {
+    display: block;
+    color: white;
+    border-radius: 3px;
+    margin: 30px auto;
+    padding: 5px 0;
+    width: 80%; }
+
+button#soc-fb {
+  background-color: #5975b1;
+  border-color: #5975b1; }
+
+button#soc-twtr {
+  background-color: #53c3ee;
+  border-color: #53c3ee; }
+
+button#soc-gp {
+  background-color: #d54e55;
+  border-color: #d54e55; }
+
+button#soc-pin {
+  background-color: #de4d35;
+  border-color: #de4d35; }
+
+.post-navigation {
+  display: block;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.2em;
+  background-color: #FFF; }
+  .post-navigation a {
+    margin: 60px 0;
+    border: 1px solid #313139;
+    display: block;
+    color: #313139;
+    padding: 15px 10px;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
+    .post-navigation a span.no-show {
+      display: none; }
+    .post-navigation a:hover {
+      border: 1px solid #FF512F;
+      background-color: #FF512F;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -ms-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 1s;
+      -moz-transition-duration: 1s;
+      -ms-transition-duration: 1s;
+      -o-transition-duration: 1s;
+      transition-duration: 1s;
+      -webkit-transition-timing-function: ease;
+      -moz-transition-timing-function: ease;
+      -ms-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
+      transition-timing-function: ease;
+      -webkit-transition-delay: 0;
+      -moz-transition-delay: 0;
+      -ms-transition-delay: 0;
+      -o-transition-delay: 0;
+      transition-delay: 0; }
+      .post-navigation a:hover .post-navigation {
+        border-color: transparent; }
+      .post-navigation a:hover span.no-show {
+        display: inline-block;
+        font-weight: 800;
+        color: white;
+        -webkit-transition-property: all;
+        -moz-transition-property: all;
+        -ms-transition-property: all;
+        -o-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 1.2s;
+        -moz-transition-duration: 1.2s;
+        -ms-transition-duration: 1.2s;
+        -o-transition-duration: 1.2s;
+        transition-duration: 1.2s;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-timing-function: ease;
+        -ms-transition-timing-function: ease;
+        -o-transition-timing-function: ease;
+        transition-timing-function: ease;
+        -webkit-transition-delay: 0;
+        -moz-transition-delay: 0;
+        -ms-transition-delay: 0;
+        -o-transition-delay: 0;
+        transition-delay: 0; }
+      .post-navigation a:hover span:first-of-type {
+        display: none; }
+
+img.thumbnail {
+  margin: 0 auto 40px; }
+
+@media screen and (min-width: 768px) {
+  div#social_media-share {
+    margin: 40px 0 0;
+    padding: 60px 0;
+    border-top: 2px solid #313139; }
+
+  #gallery_info {
+    border-bottom: 2px solid transparent; }
+ }
 
 /*  PAGE: MEMBERS */
 #mmbr__profile {
