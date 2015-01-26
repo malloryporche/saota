@@ -1,33 +1,4 @@
-//	HOME & NAVIGATION	//
-#mobile-nav {
-	text-transform: uppercase;
-	letter-spacing: 0.15em;
-	line-height: 150%;
-	li {
-		padding: 15px;
-		a {
-			font-weight: 200;
-			color: $white_text;
-			&:hover {
-			color: $accent_green;
-		}
-		}
-	}
-	.open a {
-		background-color: transparent;
-	}
-}
-.container > .navbar-header {
-	margin-right: 0;
-	margin-left: 0;
-}
-@media screen and (min-width: 769px) {
-	.container > .navbar-header {
-		margin-left: 15px;
-		margin-right: 15px;
-	}
-}
-
+//	Full page background //
 header.container {
 	position: relative;
 	background: url("../imgs/work/wk-5-mx.jpg") center center no-repeat;
@@ -57,17 +28,23 @@ header.container {
 		line-height: 150%;
 		margin-bottom: 40px;
 		font-weight: 300;
-		padding: 0 55px;
+		padding: 30px 55px 0;
 	}
+#welcome_brand {
+	text-transform: uppercase;
+			background: url('../imgs/work/wk-5-mx.jpg') center center no-repeat;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: 700;
+			@include rem(60);;
+		}
 #welcome p {
 	max-width: 560px;
 	color: #999;
 	margin: 50px auto 30px;
 	@include rem(18);
 }
-.accent {
-	color: $accent_green;
-}
+
 #welcome_link {
 	clear: both;
 	margin: 20px 0;
@@ -88,12 +65,18 @@ header.container {
 		&:hover {
 			background-color: $primary_color;
 			border-color: $primary_color;
+			span {
+				@include highlight($accent_green);;
+			}
 		}
 	}
 	div a:last-of-type {
 		&:hover {
 			background-color: $secondary_color;
 			border-color: $secondary_color;
+			span {
+				@include highlight($marigold);;
+			}
 		}
 	}
 }
@@ -197,6 +180,12 @@ p.portfolio_widget_title_animation {
 		text-transform: uppercase;
 		letter-spacing: 0.15em;
 		@include rem(20);
+		@include transition(color, 1s, ease, 0);;
+	}
+	&:hover h4 {
+		color: $accent_green;
+		font-weight: 700;
+		@include transition(all, 1s, ease, 0);;
 	}
 }
 
@@ -213,7 +202,7 @@ p.portfolio_widget_title_animation {
 	color: white;
 }
 #service_third_widget {
-	background: #de5f4c;
+	background: $secondary_color;
 	color: white;
 }
 #service_fourth_widget {
@@ -248,7 +237,6 @@ p.portfolio_widget_title_animation {
 	height: 100%;
 }
 .row .animation {
-	background: #EEE url("../imgs/grid.png") center bottom;
 	min-height: 100%;
 	margin: 4%;
 }
@@ -269,7 +257,7 @@ p.portfolio_widget_title_animation {
 #service_animation_two {
 	left: 24%;
 	height: 85%;
-	background-color: #de5f4c;
+	background-color: $secondary_color;
 	}
 	#service_animation_three {
 		left: 48%;
@@ -475,10 +463,15 @@ p.portfolio_widget_title_animation {
 		text-transform: uppercase;
 		letter-spacing: 0.15em;
 		@include rem(30);;
+		@include transition(all, 0.5s, ease, 0);;
+		&:hover {
+			@include highlight($accent_green);;
+			@include transition(all, 0.5s, ease, 0);;
+		}
 		
 	}
 	.team_member_position {
-			visibility: hidden;
+			display: none;
 			@include rem(20);;
 			letter-spacing: 0.15em;
 			text-transform: uppercase;
@@ -488,7 +481,7 @@ p.portfolio_widget_title_animation {
 }
 @media screen and (min-width: 500px) {
 	.team_member_widget h1.team_member_widget_text .team_member_position {
-		visibility: visible;
+		display: block;
 		color: #fff;
 	}
 }
@@ -556,87 +549,3 @@ p.portfolio_widget_title_animation {
 
 }
 
-//FOOTER //
-#footer {
-	background-color: $primary_background;
-	text-align: center;
-	color: white;
-	letter-spacing: 0.15em;
-	h1 {
-		padding-bottom: 45px;
-	}
-	svg {
-		width: 100%;
-		fill: #FFF;
-		-webkit-transform: rotate(180deg);
-	}
-	#footer_social_media_links a{
-		color: #888;
-		padding: 0 10px 20px 0;
-
-	}
-	p {
-		padding: 20px 0 10px;
-		i {
-			color: $secondary_color;
-		}
-		a:first-of-type {
-			color: $secondary_color;
-		}
-	}
-	#site_design {
-		padding-top: 10px;
-		color: #777;
-		a {
-			color: $primary_color_highlight;
-		}
-	}
-}
-.fadeIn{
-	animation-name: fadeIn;
-	-webkit-animation-name: fadeIn;	
-
-	animation-duration: 1.5s;	
-	-webkit-animation-duration: 1.5s;
-
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
-
-	visibility: visible !important;	
-}
-
-@keyframes fadeIn {
-	0% {
-		transform: scale(0);
-		opacity: 0.0;		
-	}
-	60% {
-		transform: scale(1.1);	
-	}
-	80% {
-		transform: scale(0.9);
-		opacity: 1;	
-	}	
-	100% {
-		transform: scale(1);
-		opacity: 1;	
-	}		
-}
-
-@-webkit-keyframes fadeIn {
-	0% {
-		-webkit-transform: scale(0);
-		opacity: 0.0;		
-	}
-	60% {
-		-webkit-transform: scale(1.1);
-	}
-	80% {
-		-webkit-transform: scale(0.9);
-		opacity: 1;	
-	}	
-	100% {
-		-webkit-transform: scale(1);
-		opacity: 1;	
-	}		
-}

@@ -48,9 +48,12 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 @import "_globals";
 
-/*  PAGE SPECIFICS: HOME & NAVIGATION  */
+/*  PAGE: HOME & NAVIGATION  */
 
-@import "pages/_home.scss";
+@import "pages/_home";
 
-/*  PAGE SPECIFICS: PORTFOLIO & GALLERY PAGES */
-@import "pages/_portfolio.scss";
+/*  PAGE: PORTFOLIO & GALLERY PAGES */
+@import "pages/_portfolio";
+
+/*  PAGE: MEMBERS */
+@import "pages/_member";

@@ -52,7 +52,11 @@
 @mixin rem($target_size) {
 	font-size: ($target_size / $base_html)+ rem;
 }
-
+@mixin highlight($font_color) {
+	font-weight: 800;
+	color: $font_color;
+	@include transition(all, 1.2s, ease, 0);;
+}
 //	VERTICALLY, HORIZONTALLY CENTERED CONTENT //
 @mixin centered {	
 	position: absolute;

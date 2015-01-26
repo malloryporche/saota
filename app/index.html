@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>theOne</title>
+    <title>Tenuto</title>
     <meta name="description" content="Creative portfolio site">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,400,300,500' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/jquery.justified.images.css">
 
     <!-- bower:css -->
     <!-- endbower -->
@@ -20,11 +21,13 @@
 
     
 
+
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
     <script async src="bower_components/modernizr/modernizr.js"></script>
     <script async src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script async src="scripts/jquery.justified.min.js"></script>
     <!-- endbuild -->
 </head>
 <body>
@@ -43,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="http://www.wearetrailblazers.com/1" class="navbar-brand" id="navbar-brand"></a>
+                <a href="http://www.wearetrailblazers.com/1" class="navbar-brand" id="navbar-brand"><img src="imgs/logo.png" alt="MPorch&eacute Logo" id="M_logo"></a>
             </div>
             <div class="collapse navbar-copllapse" id="navbar-mobile">
                 <ul class="nav navbar-nav">
@@ -62,7 +65,7 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="index.html#welcome">Welcome</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
@@ -86,12 +89,13 @@
 
     <!-- Welcome -->
     <section id="welcome">
-        <h1 id="welcome_header">Hello.  We are <span>Swerve</span></h1>
-        <p>Adipiscing aliquam a odio phasellus auctor penatibus, ac facilisis! Hac est tortor vel mid! Montes vel pellentesque ut. Elit! <strong>Quis aliquet</strong> integer, lundium eros et eu magna cursus? Dis parturient tortor placerat! Sed. Placerat <span class="accent">sed pid</span>. Duis.</p>
+        <h1 id="welcome_header">
+            We are <span id="welcome_brand">Tenuto</span></h1>
+        <p>Adipiscing aliquam a odio phasellus auctor penatibus, ac facilisis! Hac est tortor vel mid! Montes vel pellentesque ut. Elit! <stronger class="accent">Quis aliquet</stronger> integer, lundium eros et eu magna cursus? Dis parturient tortor placerat! Sed. Placerat <stronger class="accent">sed pid</stronger>. Duis.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repellat deleniti officia voluptate cumque adipisci obcaecati eos odit. Animi ratione ab itaque maxime praesentium tenetur, doloremque architecto amet tempora iure!</p>
         <div class="row" id="welcome_link">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <a href="#">About Swerve</a>
-                <a href="#">Our Twitter</a>        
+                <a href="#">About <span>Tenuto</span></a>
+                <a href="#"><span>Our</span> Twitter</a>        
             </div>
         </div>
     </section>
@@ -107,7 +111,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="portfolio_flexbox_container">
                     <div class="wrap">
-                        <a href="www.wearetrailblazers.com/1/slider_fullwidth.html"><img src="imgs/work/fc3.jpg" alt="First Crescent curbside">
+                        <a href="slider_fullwidth.html"><img src="imgs/work/fc3@400.jpeg" alt="First Crescent curbside">
                         <h2 class="portfolio_widget_title">
                             <p class="portfolio_widget_title_animation">Modernism<br>First Crescent</p>
                         </h2>
@@ -115,15 +119,7 @@
                     </div>
 
                     <div class="wrap">
-                        <a href=""><img src="imgs/work/ld1.jpg" alt="Southern_Texas Magnolia Boulevard">
-                        <h2 class="portfolio_widget_title">
-                            <p class="portfolio_widget_title_animation">Lush &amp Exotic<br>Texas</p>
-                        </h2>
-                        </a>
-                    </div>
-
-                    <div class="wrap">
-                        <a href="www.wearetrailblazers.com/1/vertical.html"><img src="imgs/work/victoria4.jpg" alt="Victoria Mixed Use Property">
+                        <a href="www.wearetrailblazers.com/1/vertical.html"><img src="imgs/work/victoria4@400x620.jpeg" alt="Victoria Mixed Use Property">
                         <h2 class="portfolio_widget_title">
                             <p class="portfolio_widget_title_animation">Oceanside<br>Victoria</p>
                         </h2>
@@ -131,49 +127,72 @@
                     </div>
 
                     <div class="wrap">
-                        <a href="#"><img src="imgs/work/med1.jpg" alt="">
+                        <a href=""><img src="imgs/work/ld1@800x800.jpeg" alt="Southern_Texas Magnolia Boulevard">
                         <h2 class="portfolio_widget_title">
-                            <p class="portfolio_widget_title_animation">Venetian Villas<br>South Africa</p>
+                            <p class="portfolio_widget_title_animation">Lush &amp Exotic<br>Texas</p>
+                        </h2>
+                        </a>
+                    </div> 
+                    <div class="wrap">
+                        <a href=""><img src="imgs/work/head1x600.jpeg" alt="Southern_Texas Magnolia Boulevard">
+                        <h2 class="portfolio_widget_title">
+                            <p class="portfolio_widget_title_animation">Seaside<br>South Africa</p>
                         </h2>
                         </a>
                     </div>
 
-                    <div class="wrap"><a href="#"><img src="imgs/work/glen2.jpg" alt="">
+                    
+
+                    <div class="wrap">
+                        <a href="#"><img src="imgs/work/med1@400x620.jpeg" alt="">
+                        <h2 class="portfolio_widget_title">
+                            <p class="portfolio_widget_title_animation">Venetian Villas<br>Ivory Coast</p>
+                        </h2>
+                        </a>
+                    </div>
+
+                    <div class="wrap"><a href="#"><img src="imgs/work/glen2@800.jpeg" alt="">
                         <h2 class="portfolio_widget_title">
                             <p class="portfolio_widget_title_animation">An Angular Oasis<br>Glenhead</p>
                         </h2>
                         </a>
                     </div>
 
-                    <div class="wrap"><a href="#"><img src="imgs/work/head4.jpg" alt="">
+                    <div class="wrap"><a href="#"><img src="imgs/work/head4@800.jpeg" alt="">
                         <h2 class="portfolio_widget_title">
                             <p class="portfolio_widget_title_animation">Clean Lines<br>Rio de Janeiro</p>
                         </h2>
                         </a>
                     </div>
 
-                    <div class="wrap"><a href="#"><img src="imgs/work/lh4.jpg" alt="">
+                    <div class="wrap"><a href="#"><img src="imgs/work/lh4@800x398.jpeg" alt="">
                         <h2 class="portfolio_widget_title">
                             <p class="portfolio_widget_title_animation">Luxe Lakehouse<br>Switzerland</p>
                         </h2>
                         </a>
                     </div>
 
-                    <div class="wrap"><a href="#"><img src="imgs/work/montrose6.jpg" alt="">
+                    <div class="wrap"><a href="#"><img src="imgs/work/montrose6@400x620.jpeg" alt="">
                         <h2 class="portfolio_widget_title">
                             <p class="portfolio_widget_title_animation">Glass House<br>Montrose</p>
                         </h2>
                         </a>
                     </div>
 
-                    <div class="wrap"><a href="#"><img src="imgs/work/mx12.jpg" alt="">
+                    <div class="wrap"><a href="#"><img src="imgs/work/fc3@800.jpeg" alt="">
+                        <h2 class="portfolio_widget_title">
+                            <p class="portfolio_widget_title_animation">Mod Marvels<br>Mexico</p>
+                        </h2>
+                        </a>
+                    </div>
+                    <div class="wrap"><a href="#"><img src="imgs/work/mx12@400x601.jpeg" alt="">
                         <h2 class="portfolio_widget_title">
                             <p class="portfolio_widget_title_animation">Mod Marvels<br>Mexico</p>
                         </h2>
                         </a>
                     </div>
 
-                    <div class="wrap"><a href="#"><img src="imgs/work/plett2.jpg" alt="">
+                    <div class="wrap"><a href="#"><img src="imgs/work/plett2@400x620.jpeg" alt="">
                         <h2 class="portfolio_widget_title">
                             <p class="portfolio_widget_title_animation">Seamless<br>Australia</p>
                         </h2>
@@ -181,10 +200,7 @@
                     </div>
 
                 </div>
-            </div>
-            
-            
-
+            </div> 
         </div>
         <!-- End #portfolio_flexbox__container -->
     </section>
@@ -309,7 +325,7 @@
                     </span>
                 </div>
                 <div class="blog_thumb_header">
-                  <a href="#"><h5>Masonry Fullwidth</h5></a>
+                  <a href="#"><h5>Masonry Full</h5></a>
                 </div>
             </div>
 
@@ -333,7 +349,7 @@
                     </span>
                 </div>
                 <div class="blog_thumb_header">
-                  <a href="#"><h5>Portfolio Fullwidth</h5></a>
+                  <a href="#"><h5>Portfolio</h5></a>
                 </div>
             </div>
 
@@ -393,7 +409,7 @@
                     </span>
                 </div>
                 <div class="blog_thumb_header">
-                  <a href="#"><h5>Vertical Fullwidth B</h5></a>
+                  <a href="#"><h5>Vertical Fullwidth</h5></a>
                 </div>
             </div>
 
@@ -545,7 +561,7 @@
             </polygon>
         </div>   
         
-        <a href="http://www.msmalloryporche.com"><h1>LOGO</h1></a>
+        <a href="http://www.msmalloryporche.com"><img src="imgs/logo.png" alt="MPorche Logo"></a>
 
         <div class="row">
           <div class="small-12 medium-12 large-12 centered columns'" id="footer_social_media_links">
@@ -619,5 +635,43 @@
     }
   });
 }); </script>
+
+<!--justified.js-->
+<script>
+$('.image-container').empty().justifiedImages({
+    images : photos,
+    rowHeight: 200,
+    maxRowHeight: 400,
+    thumbnailPath: function(photo, width, height){
+        var purl = photo.url_s;
+        if( photo.url_n && (width > photo.width_s * 1.2 || height > photo.height_s * 1.2) ) purl = photo.url_n;
+        if( photo.url_m && (width > photo.width_n * 1.2 || height > photo.height_n * 1.2) ) purl = photo.url_m;
+        if( photo.url_z && (width > photo.width_m * 1.2 || height > photo.height_m * 1.2) ) purl = photo.url_z;
+        if( photo.url_l && (width > photo.width_z * 1.2 || height > photo.height_z * 1.2) ) purl = photo.url_l;
+        return purl;
+    },
+    getSize: function(photo){
+        return {width: photo.width_s, height: photo.height_s};
+    },
+    margin: 1
+});
+</script>
+
+<!--Test for Webkit-Text-Fill_col-->
+<script src="modernizr-1.6.min.js"></script>
+<script>
+  Modernizr.addTest('backgroundclip',function() {
+
+    var div = document.createElement('div');
+
+    if ('backgroundClip' in div.style)
+      return true;
+
+    'Webkit Moz O ms Khtml'.replace(/([A-Za-z]*)/g,function(val) { 
+      if (val+'BackgroundClip' in div.style) return true;
+    });
+
+  });
+</script>
 </body>
 </html>

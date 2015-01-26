@@ -5,7 +5,25 @@ html, body, .container {
 	margin: 0;
 	padding: 0;
 }
-
+main {
+	padding-top: 50px;
+}
+.row {
+	margin: 0;
+	padding: 0;
+}
+#M_logo {
+	width: 30px;
+}
+@media screen and (min-width: 992px) {
+	#M_logo {
+		width: 60px;
+	}
+	div.container-fluid {
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+}
 //  DOCUMENT LEVEL FONT-SIZE ADJUSTMENTS  //
 html {
 	font-size: $base_html_font_size;
@@ -43,5 +61,87 @@ h1, h2, h3, h4, h5, h6, p {
 		@include rem(18);
 		margin: 45px 0 10px;
 		color: #999;
+	}
+}
+
+.accent {
+	text-transform: uppercase;
+	color: $accent_green;
+}
+.highlight_accent {
+	color: $accent_green;
+}
+
+//  NAVIGATION	//
+#mobile-nav {
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	line-height: 150%;
+	li {
+		padding: 15px;
+		a {
+			font-weight: 200;
+			color: $white_text;
+			&:hover {
+			color: $accent_green;
+		}
+		}
+	}
+	.open a {
+		background-color: transparent;
+	}
+}
+.container > .navbar-header {
+	margin-right: 0;
+	margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+	.container > .navbar-header {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	#mobile-nav li {
+		padding: 0;
+	}
+}
+@media screen and (min-width: 992px) {
+	#mobile-nav li {
+		padding: 15px;
+	}
+}
+//FOOTER //
+#footer {
+	background-color: $primary_background;
+	text-align: center;
+	color: white;
+	letter-spacing: 0.15em;
+	img {
+		padding: 75px 0 45px 0;
+	}
+	svg {
+		width: 100%;
+		fill: #FFF;
+		-webkit-transform: rotate(180deg);
+	}
+	#footer_social_media_links a{
+		color: #888;
+		padding: 0 10px 20px 0;
+
+	}
+	p {
+		padding: 20px 0 10px;
+		i {
+			color: $secondary_color;
+		}
+		a:first-of-type {
+			color: $secondary_color;
+		}
+	}
+	#site_design {
+		padding-top: 10px;
+		color: #777;
+		a {
+			color: $primary_color_highlight;
+		}
 	}
 }
