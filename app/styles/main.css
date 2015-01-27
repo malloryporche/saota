@@ -4966,6 +4966,9 @@ main {
   margin: 0;
   padding: 0; }
 
+div.col-sm-12.col-md-12.col-lg-12.folio_img_wrap, div.col-sm-6.col-md-6.col-lg-6.folio_img_wrap, div.col-sm-4.col-md-4.col-lg-4.folio_img_wrap {
+  padding: 0; }
+
 #M_logo {
   width: 30px; }
 
@@ -4996,7 +4999,28 @@ body {
  }
 
 a, a:hover, a:visited {
+  font-weight: 800;
   color: black;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
   text-decoration: none;
   text-transform: uppercase; }
 
@@ -5112,7 +5136,28 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 15px; }
     #mobile-nav li a {
       font-weight: 200;
-      color: #fff; }
+      font-weight: 800;
+      color: white;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -ms-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      -ms-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease;
+      -moz-transition-timing-function: ease;
+      -ms-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
+      transition-timing-function: ease;
+      -webkit-transition-delay: 0;
+      -moz-transition-delay: 0;
+      -ms-transition-delay: 0;
+      -o-transition-delay: 0;
+      transition-delay: 0; }
       #mobile-nav li a:hover {
         font-weight: 800;
         color: #c2d848;
@@ -5141,11 +5186,11 @@ h1, h2, h3, h4, h5, h6, p {
         -ms-transition-property: color;
         -o-transition-property: color;
         transition-property: color;
-        -webkit-transition-duration: 0.5s;
-        -moz-transition-duration: 0.5s;
-        -ms-transition-duration: 0.5s;
-        -o-transition-duration: 0.5s;
-        transition-duration: 0.5s;
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -ms-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s;
         -webkit-transition-timing-function: ease;
         -moz-transition-timing-function: ease;
         -ms-transition-timing-function: ease;
@@ -5257,7 +5302,29 @@ header.container {
     padding: 10px 0;
     margin: 15px auto;
     border: 1px solid black;
-    width: 210px; }
+    width: 210px;
+    font-weight: 800;
+    color: #313139;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
     #welcome_link div a:hover {
       font-weight: 800;
       color: white;
@@ -5415,7 +5482,7 @@ header.container {
     width: 100%;
     -webkit-flex-grow: 1;
     display: block;
-    padding: 0;
+    padding: 1px;
     margin: 0;
     -webkit-transform: scale(1);
     -webkit-transition-property: -webkit-transform;
@@ -5606,6 +5673,28 @@ p.portfolio_widget_title_animation {
   position: relative;
   text-align: center; }
   .service_widget h4 {
+    font-weight: 800;
+    color: #313139;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     font-size: 1.25rem;
@@ -5629,9 +5718,29 @@ p.portfolio_widget_title_animation {
     -ms-transition-delay: 0;
     -o-transition-delay: 0;
     transition-delay: 0; }
-  .service_widget:hover h4 {
+  .service_widget:hover div.service_widget_container h4 {
+    font-weight: 800;
     color: #c2d848;
-    font-weight: 700;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0;
     -webkit-transition-property: all;
     -moz-transition-property: all;
     -ms-transition-property: all;
@@ -5652,6 +5761,28 @@ p.portfolio_widget_title_animation {
     -ms-transition-delay: 0;
     -o-transition-delay: 0;
     transition-delay: 0; }
+  .service_widget:hover .service_widget_icon {
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -webkit-transform;
+    -ms-transition-property: -webkit-transform;
+    -o-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0;
+    -webkit-transform: scale(0.5); }
 
 .service_widget_container {
   position: absolute;
@@ -5669,12 +5800,102 @@ p.portfolio_widget_title_animation {
   background: #666; }
 
 #service_second_widget {
-  background: #313139;
-  color: white; }
+  background: #313139; }
+  #service_second_widget h4 {
+    font-weight: 800;
+    color: darkgray;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
+  #service_second_widget:hover h4 {
+    font-weight: 800;
+    color: #c2d848;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
 
 #service_third_widget {
-  background: #FF512F;
-  color: white; }
+  background: #FF512F; }
+  #service_third_widget h4 {
+    font-weight: 800;
+    color: white;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
+  #service_third_widget:hover h4 {
+    font-weight: 800;
+    color: #c2d848;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
 
 #service_fourth_widget {
   background: #ccc; }
@@ -5710,28 +5931,6 @@ p.portfolio_widget_title_animation {
   -ms-transition-delay: 0;
   -o-transition-delay: 0;
   transition-delay: 0; }
-  .service_widget_icon:hover {
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -webkit-transform;
-    -ms-transition-property: -webkit-transform;
-    -o-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -ms-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-timing-function: ease-out;
-    -moz-transition-timing-function: ease-out;
-    -ms-transition-timing-function: ease-out;
-    -o-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    -webkit-transition-delay: 0;
-    -moz-transition-delay: 0;
-    -ms-transition-delay: 0;
-    -o-transition-delay: 0;
-    transition-delay: 0;
-    -webkit-transform: scale(0.5); }
 
 .service_widget_icon i {
   color: white;
@@ -6638,10 +6837,10 @@ header #slider_fullwidth {
 a.carousel-control.right, a.carousel-control.left {
   background-image: none; }
 
-#portfolio-description-text h1 {
+.portfolio-description-text h1 {
   text-align: center;
   letter-spacing: 0.15em; }
-  #portfolio-description-text h1:first-line {
+  .portfolio-description-text h1:first-line {
     font-weight: 800;
     color: #c2d848;
     -webkit-transition-property: all;
@@ -6664,19 +6863,19 @@ a.carousel-control.right, a.carousel-control.left {
     -ms-transition-delay: 0;
     -o-transition-delay: 0;
     transition-delay: 0; }
-#portfolio-description-text h4 {
+.portfolio-description-text h4 {
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 55px; }
-#portfolio-description-text p {
+.portfolio-description-text p {
   padding-top: 20px;
   letter-spacing: 0.1em;
   color: darkgray; }
-  #portfolio-description-text p:first-of-type {
+  .portfolio-description-text p:first-of-type {
     padding-top: 50px;
     display: inline-block;
     float: right; }
-    #portfolio-description-text p:first-of-type:first-letter {
+    .portfolio-description-text p:first-of-type:first-letter {
       margin-top: -20px;
       margin-bottom: -40px;
       margin-right: 5px;
@@ -6849,6 +7048,12 @@ img.thumbnail {
   #gallery_info {
     border-bottom: 2px solid transparent; }
  }
+
+.folio_img_wrap img {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding: 1px; }
 
 /*  PAGE: MEMBERS */
 #mmbr__profile {

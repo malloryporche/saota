@@ -92,7 +92,7 @@ a.carousel-control.right, a.carousel-control.left {
 	background-image: none; 
 }
 
-#portfolio-description-text {
+.portfolio-description-text {
   h1 {
     text-align: center;
     letter-spacing: 0.15em;
@@ -218,4 +218,11 @@ img.thumbnail {
   #gallery_info {
     border-bottom: 2px solid transparent;
   }
+}
+
+.folio_img_wrap img {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding: 1px;
 }

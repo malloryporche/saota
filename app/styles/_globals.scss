@@ -12,6 +12,11 @@ main {
 	margin: 0;
 	padding: 0;
 }
+div.col-sm-12.col-md-12.col-lg-12.folio_img_wrap,
+div.col-sm-6.col-md-6.col-lg-6.folio_img_wrap,
+div.col-sm-4.col-md-4.col-lg-4.folio_img_wrap {
+	padding: 0;
+}
 #M_logo {
 	width: 30px;
 }
@@ -42,7 +47,7 @@ body {
 
 // TYPOGRAPHY 
 a, a:hover, a:visited {
-	color: black;
+	@include highlight(black);;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -83,10 +88,10 @@ h1, h2, h3, h4, h5, h6, p {
 		padding: 15px;
 		a {
 			font-weight: 200;
-			color: $white_text;
+			@include highlight(white);;
 			&:hover {
 			@include highlight($accent_green);;
-			@include transition(color, 0.5s, ease, 0);;
+			@include transition(color, 1s, ease, 0);;
 		}
 		}
 	}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>theOne</title>
+    <title>Tenuto</title>
     <meta name="description" content="Creative portfolio site">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -20,11 +20,13 @@
 
     
 
+
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
     <script async src="bower_components/modernizr/modernizr.js"></script>
     <script async src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script async src="scripts/jquery.justified.min.js"></script>
     <!-- endbuild -->
 </head>
 <body>
@@ -33,7 +35,7 @@
     <![endif]-->
 
 
-     <!--Site Navigation-->
+    <!--Site Navigation-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="mobile-nav">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -43,16 +45,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="http://www.wearetrailblazers.com/tenuto" class="navbar-brand" id="navbar-brand">
-                <img src="imgs/logo.png" alt="MPorch&eacute Logo" id="M_logo"></a>
+                <a href="http://www.wearetrailblazers.com/1" class="navbar-brand" id="navbar-brand"><img src="imgs/logo.png" alt="MPorch&eacute Logo" id="M_logo"></a>
             </div>
             <div class="collapse navbar-copllapse" id="navbar-mobile">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html#welcome">Welcome</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b> </a>
                         <ul class="dropdown-menu">
                             <li><a href="#blog">Blog</a></li>
@@ -64,50 +65,34 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html#welcome">Welcome</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--End Site Navigation-->
-
-    <!--Full Page Image Background Carousel Header-->
-    <header class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 carousel slide carousel-fade" data-target="slider_fullwidth" id="slider_fullwidth">
-        
-        <!--Wrapper for slides-->
-        <div class="carousel-inner">
-            <!--Set images for slider in CSS-->
-            <div class="item active"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
-        <!--Controls-->
-        <a class="carousel-control left" href="#slider_fullwidth" data-slide="prev">         
-            <span class="icon-prev"></span>
-        </a>
-        <a class="carousel-control right" href="#slider_fullwidth" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
-    <!--End slider-->
     
-    <!--Page content-->
-    <main class="container-fluid">
-        <section class="portfolio-description-text">
-            <h1>Modernism on First Crescent</h1>
-            <h4>Portfolio post featuring fullwidth slider</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A recusandae consequuntur corrupti magni quisquam voluptates vitae omnis consequatur voluptatum, enim nemo sint veniam debitis adipisci accusamus dolores nesciunt aut mollitia.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quas et in, assumenda! Accusantium, fuga similique deserunt dolorum ipsum architecto repudiandae tempora cumque nesciunt doloremque ab dolores molestias, voluptatum aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Quia minus a mollitia consequuntur fuga sit iste esse placeat alias in dicta veritatis impedit cupiditate, tempore, aut nemo possimus enim maiores.  Explicabo autem numquam nam laudantium, unde, cum nisi libero similique quidem facilis temporibus aut, saepe non hic voluptates eligendi? Autem officia praesentium error voluptatibus quas modi est voluptates! Quasi, eos.  Eligendi necessitatibus consequuntur explicabo, numquam odit cupiditate nemo repudiandae ipsam tenetur nulla eaque eum alias quibusdam quod temporibus consectetur cumque velit hic asperiores placeat! Illum, cum, ea! Incidunt, quibusdam, ut.  Obcaecati aperiam rerum omnis natus provident a, incidunt totam, quia perferendis unde iure suscipit consequuntur nulla cupiditate, quaerat est reprehenderit voluptate ratione voluptas dignissimos quod adipisci. Praesentium, odio dolores blanditiis.</p>
-        </section>
-        <section class="row" id="portfolio-description-img-information">
+    <main>
+    
+    <!--Start of vertical images -->
+    <section class="row portfolio_imgs">
+         <div class="col-sm-12 col-md-12 col-lg-12 folio_img_wrap"><img src="imgs/work/montrose3.jpg" alt=""></div>
+         <div class="col-sm-6 col-md-6 col-lg-6 folio_img_wrap"><img src="imgs/work/montrose1.jpg" alt=""></div>
+         <div class="col-sm-6 col-md-6 col-lg-6 folio_img_wrap"><img src="imgs/work/montrose2.jpg" alt=""></div>
+     </section>
+     <div class="col-sm-12 col-md-12 col-lg-12 folio_img_wrap"><img src="imgs/work/montrose4.jpg" alt=""></div>
+     <div class="col-sm-4 col-md-4 col-lg-4 folio_img_wrap"><img src="imgs/work/montrose5.jpg" alt=""></div>
+     <div class="col-sm-4 col-md-4 col-lg-4 folio_img_wrap"><img src="imgs/work/montrose6.jpg" alt=""></div>
+     <div class="col-sm-4 col-md-4 col-lg-4 folio_img_wrap"><img src="imgs/work/montrose7.jpg" alt=""></div>
+     <section class="portfolio-description-text row" id="gallery_info">
+         <h1><span>Vertical</span> fullwidth</h1>
+         <h4>Portfolio post with a fullwidth customizable vertical image list></h4>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime quo error, tempora unde dolore eius consectetur ea quidem nisi quae fugit inventore earum harum ad optio, id est perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nemo, atque? </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos impedit repellendus, illum quis excepturi veniam quia dicta maiores sunt maxime dolore quae ducimus vel esse, numquam suscipit id, harum quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ipsam a quis quod delectus ut sunt ad, repellat asperiores voluptate at ratione, fuga, culpa necessitatibus quae quia assumenda sint cupiditate.</p>
+    </section> 
+      <section class="row" id="portfolio-description-img-information">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-lg-offset-2 col-xl-4 col-xl-offset-2" id="gallery_info">
                 <div class="row">
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 portfolio-info-property-title">
@@ -200,10 +185,12 @@
     </main>
 
     <footer id="footer">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100" style="height: 143px;">
+            <polygon points="0,0 50,98 100,0 100,100 0,100" id="mask">
+            </polygon>
+        </div>   
         
-        <a href="http://www.msmalloryporche.com" id="ftr_logo">
-            <img src="imgs/logo.png" alt="MPorch&eacute">
-        </a>
+        <a href="http://www.msmalloryporche.com"><img src="imgs/logo.png" alt="MPorche Logo"></a>
 
         <div class="row">
           <div class="small-12 medium-12 large-12 centered columns'" id="footer_social_media_links">
@@ -212,25 +199,17 @@
             <a href="http://www.behance.com">Behance</a>
             <a href="http://www.flickr.com">Flickr</a>
           </div>
-        <p> <span id="copy">Copyright &copy 2015 | <a href="www.wearetrailblazers.com/tenuto">Tenuto</a> Group Ltd.</p> </span>
+        <p>
+            <br> Hand coded wtih <i class="fa fa-heart"></i> by <a href="http://www.msmalloryporche.com">Mallory Porch&eacute</a> <br> <span id="site_design">Site design inspired by <a href="www.ximudesign.com">XIMU Design</a><br><br>Copyright &copy 2014 </p> </span>
         </div>
     </footer>
 
-   <!-- build:js scripts/vendor.js -->
+
+
+    <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -238,7 +217,18 @@
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
     <!-- Animate on scroll -->
-   <script>$('.carousel').carousel();</script>
+    <script>
+    $(window).scroll(function() {
+        $('#service_fourth_widget').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $('.service_widget_animations').addClass("pullUp");
+            }
+        });
+    });
+</script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -263,5 +253,7 @@
     }
   });
 }); </script>
+
+
 </body>
 </html>
