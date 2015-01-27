@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6, p {
 			@include highlight($accent_green);;
 			@include transition(color, 1s, ease, 0);;
 			}
-			&: .accent {
+			.accent {
 			@include highlight($accent_green);;
 			}
 		}
