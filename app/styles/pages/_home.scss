@@ -194,6 +194,9 @@ p.portfolio_widget_title_animation {
 		@include transition(-webkit-transform, 1s, ease-out, 0);;
 		-webkit-transform: scale(.5);;
 	}
+	p {
+		@include highlight($primary_color);;
+	}
 }
 
 .service_widget_container {
@@ -206,7 +209,7 @@ p.portfolio_widget_title_animation {
 }
 #service_second_widget {
 	background: #313139;
-	h4 {
+	h4, p {
 		@include highlight(darkgray);;
 	}
 	&:hover h4 {
@@ -215,7 +218,7 @@ p.portfolio_widget_title_animation {
 }
 #service_third_widget {
 	background: $secondary_color;
-	h4 {
+	h4, p {
 		@include highlight(white);;
 	}
 	&:hover h4 {
@@ -387,7 +390,7 @@ p.portfolio_widget_title_animation {
 	max-width: 100%;
 	display: block;
 	margin: 0;
-	padding: 0;
+	padding: 1px;
 	position: relative;
 	-webkit-transform: scale(1);
 	@include transition(-webkit-transform, .5s, ease-in, 0);;

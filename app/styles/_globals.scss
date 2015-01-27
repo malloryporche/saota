@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .accent {
 	text-transform: uppercase;
+	color: $accent_green;
 	@include highlight($accent_green);;
 	@include transition(all, 0.5s, ease, 0);;
 }
@@ -92,7 +93,10 @@ h1, h2, h3, h4, h5, h6, p {
 			&:hover {
 			@include highlight($accent_green);;
 			@include transition(color, 1s, ease, 0);;
-		}
+			}
+			&: .accent {
+			@include highlight($accent_green);;
+			}
 		}
 	}
 	.open a {
