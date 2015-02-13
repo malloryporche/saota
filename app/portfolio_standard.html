@@ -27,6 +27,11 @@
     <script async src="bower_components/modernizr/modernizr.js"></script>
     <script async src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script async src="scripts/jquery.justified.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+        <script src="main.js"></script>
+    $(function(){
+    $('#Container').mixItUp();  
+});
     <!-- endbuild -->
 </head>
 <body>
@@ -83,7 +88,30 @@
         </div>
     </header>
 
-    main.row-fluid.portfolio-content>
+    <main class="row-fluid portfolio-content">
+        <div class="col-sm-12 col-lg-12" id="filter-controls">
+            <button class="filter" data-filter=".single-res">Single Residential Projects</button>
+            <button class="filter" data-filter=".multi-res">Multi-Residential Projects</button> 
+            <button class="filter" data-filter=".commercial-hi">Commercial &amp High Rise Projects</button>
+            <button class="filter" data-filter=".hotel-Resort">Hotel &amp Resorts</button>
+            <button class="filter" data-filter=".Retail">Retail Projects</button>
+            <button class="filter" data-filter=".Education-Health">Education &amp Health Projects</button>
+            <button class="filter" data-filter=".Civic-Cultural">Civic &amp Cultural Projects</button>
+        </div>
+
+        <section class="col-sm-12" id="Container">
+            <div class="row">
+                <div class="col-sm-3 mix category-1" data-my-order="1"><a href="#"><img src="imgs/work/montrose1.jpg" alt=""></a></div>
+                <div class="col-sm-3 mix category-1" data-my-order="2"><a href="#"><img src="imgs/work/montrose2.jpg" alt=""></a></div>
+                <div class="col-sm-3 mix category-1" data-my-order="3"><a href="#"><img src="imgs/work/montrose3.jpg" alt=""></a></div>
+                <div class="col-sm-3 mix category-1" data-my-order="4"><a href="#"><img src="imgs/work/montrose4.jpg" alt=""></a></div>
+                <div class="col-sm-3 mix category-1" data-my-order="5"><a href="#"><img src="imgs/work/montrose5.jpg" alt=""></a></div>
+                <div class="col-sm-3 mix category-1" data-my-order="6"><a href="#"><img src="imgs/work/montrose6.jpg" alt=""></a></div>
+            </div>
+        </section>
+    </main>
+
+
     <footer id="footer">
         
         <a href="http://www.msmalloryporche.com" id="ftr_logo">

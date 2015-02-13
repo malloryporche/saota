@@ -5293,6 +5293,9 @@ h1, h2, h3, h4, h5, h6, p {
     #footer #site_design a {
       color: #19191e; }
 
+#Container .mix {
+  display: none; }
+
 /*  PAGE: HOME & NAVIGATION  */
 header.container {
   position: relative;
