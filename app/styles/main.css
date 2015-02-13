@@ -4966,6 +4966,15 @@ main {
   margin: 0;
   padding: 0; }
 
+div.col-lg-12 {
+  padding: 0; }
+
+div.col-xs-6.col-sm-6.col-lg-6 {
+  padding: 0; }
+
+div.col-xs-4.col-sm-4.col-lg-4 {
+  padding: 0; }
+
 div.col-sm-12.col-md-12.col-lg-12.folio_img_wrap, div.col-sm-6.col-md-6.col-lg-6.folio_img_wrap, div.col-sm-4.col-md-4.col-lg-4.folio_img_wrap {
   padding: 0; }
 
@@ -5254,6 +5263,10 @@ h1, h2, h3, h4, h5, h6, p {
  }
 
 #footer {
+  position: aboslute;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-color: #2C2F36;
   text-align: center;
   color: white;
@@ -7337,6 +7350,10 @@ img.thumbnail {
   .portfolio-description-text p {
     padding: 0px 80px 10px; }
  }
+
+#vertical_fullwidth img {
+  width: 100%;
+  border: 1px solid white; }
 
 /*  PAGE: MEMBERS */
 #mmbr__profile {
