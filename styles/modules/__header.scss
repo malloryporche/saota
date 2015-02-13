@@ -1,0 +1,53 @@
+.navbar-default {
+	background-color: #FFF;
+	border-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+	border: 1px solid transparent;
+	padding-top: 10px;
+	padding-bottom: 0;
+	&:hover, &:focus {
+		background-color: #fff;
+	}
+}
+a#pm-header__logo {
+	padding: 25px 0 0 15px;
+	display: block;
+	margin: 0 auto;
+	font-family: "Times";
+	font-style: oblique;
+	@include rem(60);;
+	letter-spacing: 3px;
+	text-transform: lowercase;
+	color: $accent;
+	&:hover {
+		color: $primary_color;
+	}
+}
+
+#navbar {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	@include rem(20);;
+	text-align: center;
+	font-weight: 700;
+}
+
+// RESPOND TO PHONES  //
+
+@media screen and (max-width: 480px) {
+#pm-header__login ul li {
+	padding-top: 10px;
+	&:first-of-type {
+		display: block;
+	}
+	text-transform: uppercase;
+	display: none;
+}
+
+#pm-header__links ul li {
+	display: none;
+}
+
+}

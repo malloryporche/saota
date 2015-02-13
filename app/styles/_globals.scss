@@ -18,15 +18,15 @@ div.col-sm-4.col-md-4.col-lg-4.folio_img_wrap {
 	padding: 0;
 }
 #M_logo {
-	width: 30px;
+	width: 70px;
+}
+a#navbar-brand.navbar-brand {
+	padding: 0;
 }
 @media screen and (min-width: 992px) {
-	#M_logo {
-		width: 60px;
-	}
 	div.container-fluid {
-		margin-right: 50px;
-		margin-left: 50px;
+		padding: 0;
+		letter-spacing: 7px;
 	}
 }
 //  DOCUMENT LEVEL FONT-SIZE ADJUSTMENTS  //
@@ -83,10 +83,14 @@ h1, h2, h3, h4, h5, h6, p {
 //  NAVIGATION	//
 #mobile-nav {
 	text-transform: uppercase;
-	letter-spacing: 0.15em;
+	letter-spacing: 8px;
+	text-align: center;
 	line-height: 150%;
+	@media screen and (min-width: 768px) and (max-width: 865px) {
+		letter-spacing: 4px;	
+		}
 	li {
-		padding: 15px;
+		padding: 10px;
 		a {
 			font-weight: 200;
 			@include highlight(white);;
@@ -107,7 +111,8 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-right: 0;
 	margin-left: 0;
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 769px) {
 	.container > .navbar-header {
 		margin-left: 15px;
 		margin-right: 15px;
@@ -117,6 +122,9 @@ h1, h2, h3, h4, h5, h6, p {
 	}
 }
 @media screen and (min-width: 992px) {
+	a#navbar-brand.navbar-brand {
+		padding: 15px 15px;
+	}
 	#mobile-nav li {
 		padding: 15px;
 	}
@@ -128,7 +136,8 @@ h1, h2, h3, h4, h5, h6, p {
 	color: white;
 	letter-spacing: 0.15em;
 	img {
-		padding: 75px 0 45px 0;
+		margin-top: 45px;
+		height: 130px;
 	}
 	svg {
 		width: 100%;

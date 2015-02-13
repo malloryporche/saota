@@ -1,0 +1,54 @@
+//	GLOBAL STYLES //
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+//  DOCUMENT LEVEL FONT-SIZE ADJUSTMENTS  //
+html {
+	font-family: "Arial";
+	font-size: $base_html_font_size;
+}
+body {
+	font-family: "Arial";
+}
+@media screen and (max-width: 900px) {
+	html { font-size: 18px; }
+}
+
+@media screen and (max-width: 400px) {
+	html { font-size: 14px; }
+}
+
+// TYPOGRAPHY ADJUSTMENTS
+a {
+	color: $secondary_color;
+	text-decoration: none;
+	@include transition(color, .5s, ease, 0);;
+	&:hover {
+		text-decoration: none;
+		color: $accent;
+		@include transition(color, .5s, ease, 0);;
+	}
+}
+
+section {
+	background: white;
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Times";
+		color: black;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	img {
+		display: inline-block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+}
+
+hr {
+	background-color: #eee;
+}

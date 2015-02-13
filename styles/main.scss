@@ -1,0 +1,79 @@
+/*
+Site Name: MalloryPorche
+Author: MalloryPorche
+Author URI: http://www.wearetrailblazers.com/mp
+Description: Retail, Business Website
+Version: 1.0
+*/
+
+/*
+----------------------------------------------------------------
+Made with love by MalloryPorche | http://www.msmalloryporche.com
+----------------------------------------------------------------
+
+1) RESET, BOOTSTRAP STYLING, genertal
+2) VARIABLES & MIXINS
+3) GLOBAL STYLES
+4) HOME
+5) NAVIGATION
+6) SECTIONS
+7) SERVICES
+8) WORKS
+9) GALLERY
+10) TEAM
+11) CONTACT
+12) FOOTER
+13) CAROUSELS
+14) BUTTONS
+--------------
+*/
+
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+
+/*----------------------------------------------------------------
+    GENERAL:  CSS-RESET | BOOTSTRAP
+----------------------------------------------------------------*/  
+
+@import "globals/_reset";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+
+
+/*----------------------------------------------------------------
+    GENERAL:  VARIABLES  |  MIXINS  |  FUNCTIONS
+----------------------------------------------------------------*/  
+
+
+@import "globals/_variables";
+@import "globals/_mixins";
+@import "globals/_functions";
+
+
+/*----------------------------------------------------------------
+    GENERAL:  GLOBALS | TYPOGRAPHY
+----------------------------------------------------------------*/  
+
+
+@import "globals/_globals";
+@import "globals/_typography";
+
+
+/*----------------------------------------------------------------
+    MODULES:  NAVIGATION | HEADER  |  FOOTER
+----------------------------------------------------------------*/  
+
+
+@_import "modules/_navigation";
+@import "modules/_header";
+@import "modules/_footer";
+
+
+/*----------------------------------------------------------------
+    PAGE:  HOME
+----------------------------------------------------------------*/  
+
+
+@import "pages/_home.scss";
+
+
+

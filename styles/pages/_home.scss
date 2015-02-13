@@ -1,0 +1,65 @@
+.main-slider_item__wrapper {
+	margin: 10px 10px 10px 0;
+	padding: 0;
+	img {
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+	&:last-of-type {
+		background: $primary_color;
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		padding: 10px;
+		letter-spacing: 3px;
+		font-weight: lighter;
+		line-height: 2;
+		max-width: 340px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+div.main-slider_item#pm_slogan {
+	padding: 90px;
+	border: 2px solid white;
+
+}
+div.row.carousel-inner {
+	margin: 0;
+	.item { 
+	h1, h2, h4, h6, p {
+		text-align: center;
+		font-family: "Times";
+	}
+	p {
+		padding: 0 40px;
+	}
+		img {
+		display: block;
+		margin: 0 auto;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 768px) {
+ 	#highlight_slider__multi-item-dsktp {
+ 		display: none;
+ 	}
+ }
+@media screen and (min-width: 769px) {
+	#highlight_slider__multi-item-mbl {
+		display: none;
+	}
+}

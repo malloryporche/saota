@@ -52,11 +52,7 @@
 @mixin rem($target_size) {
 	font-size: ($target_size / $base_html)+ rem;
 }
-@mixin highlight($font_color) {
-	font-weight: 800;
-	color: $font_color;
-	@include transition(all, 0.5s, ease, 0);;
-}
+
 //	VERTICALLY, HORIZONTALLY CENTERED CONTENT //
 @mixin centered {	
 	position: absolute;
@@ -69,3 +65,29 @@
 	transform: translate(-50%, -50%);
 }
 
+
+//MEDIA QUERIES  //
+
+@mixin respond-to-phones($attribute, $value) {
+	@media screen and (max-width: 480px) {
+		$attribute: $value;
+	}
+}
+
+@mixin respond-to-tablets($attribute, $value) {
+	@media screen and (min-width: 481px) and (max-width: 767px) {
+		$attribute: $value;
+	}
+}
+
+@mixin respond-to-tablets-landscape($attribute, $value) {
+	@media screen and (min-width: 768px) and (max-width: 979px) {
+		$attribute: $value;
+	}
+}
+
+@mixin respond-to-desktop($attribute, $value) {
+	@media screen and (min-width: 1200px) {
+		$attribute: $value;
+	}
+}
