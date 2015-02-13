@@ -6972,7 +6972,7 @@ a.carousel-control.right, a.carousel-control.left {
 hr {
   max-width: 45%;
   margin: 20px auto;
-  border-color: #313139; }
+  border: 1.5px solid #313139; }
 
 header #slider_fullwidth {
   padding: 0; }
@@ -7117,7 +7117,7 @@ a.carousel-control.right, a.carousel-control.left {
 
 .portfolio-description-text h1 {
   text-align: center;
-  letter-spacing: 0.15em; }
+  letter-spacing: 0.2em; }
   .portfolio-description-text h1:first-line {
     font-weight: 800;
     color: #c2d848;
@@ -7144,7 +7144,7 @@ a.carousel-control.right, a.carousel-control.left {
 .portfolio-description-text h4 {
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 25px; }
+  letter-spacing: 3px; }
 .portfolio-description-text p {
   padding: 20px;
   letter-spacing: 0.1em;

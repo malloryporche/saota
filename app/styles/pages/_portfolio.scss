@@ -1,7 +1,7 @@
 hr {
   max-width: 45%;
   margin: 20px auto;
-  border-color: #313139;
+  border: 1.5px solid #313139;
 }
 
 header #slider_fullwidth {
@@ -101,7 +101,7 @@ a.carousel-control.right, a.carousel-control.left {
 .portfolio-description-text {
   h1 {
     text-align: center;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
     &:first-line {
      @include highlight($accent_green);;
     }
@@ -109,7 +109,7 @@ a.carousel-control.right, a.carousel-control.left {
   h4 {
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 25px;
+    letter-spacing: 3px;
   }
   p {
     padding: 20px;
