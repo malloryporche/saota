@@ -1,3 +1,9 @@
+hr {
+  max-width: 45%;
+  margin: 20px auto;
+  border-color: #313139;
+}
+
 header #slider_fullwidth {
   padding: 0;
 }
@@ -40,10 +46,10 @@ header #slider_fullwidth {
     z-index: 2;
     @include transition(all, 3s, ease,0);;
     span {
-      color: white;
-      background-color: white;
+      color: $accent_green;
       opacity: 1;
       border-radius: 50%;
+      @include rem(80);;
     }
   }
 }
@@ -103,14 +109,14 @@ a.carousel-control.right, a.carousel-control.left {
   h4 {
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 55px;
+    padding-bottom: 25px;
   }
   p {
-    padding-top: 20px;
+    padding: 20px;
     letter-spacing: 0.1em;
     color: darkgray;
     &:first-of-type {
-      padding-top: 50px;
+      padding-top: 25px;
       display: inline-block;
       float: right;
     &:first-letter {
@@ -225,4 +231,12 @@ img.thumbnail {
   padding-left: 0px;
   padding-right: 0px;
   padding: 1px;
+}
+
+@media screen and (min-width: 769px) {
+  .portfolio-description-text {
+    p {
+      padding: 0px 80px 10px;
+    }
+  }
 }

@@ -6780,8 +6780,7 @@ p.portfolio_widget_title_animation {
   -o-transition-delay: 0;
   transition-delay: 0; }
   .carousel-control span {
-    color: white;
-    background-color: white;
+    color: #c2d848;
     opacity: 1;
     border-radius: 50%; }
 
@@ -6962,6 +6961,11 @@ body#folio section.row {
 a.carousel-control.right, a.carousel-control.left {
   background-image: none; }
 
+hr {
+  max-width: 45%;
+  margin: 20px auto;
+  border-color: #313139; }
+
 header #slider_fullwidth {
   padding: 0; }
 
@@ -7064,10 +7068,10 @@ header #slider_fullwidth {
   -o-transition-delay: 0;
   transition-delay: 0; }
   .carousel-fade .carousel-control span {
-    color: white;
-    background-color: white;
+    color: #c2d848;
     opacity: 1;
-    border-radius: 50%; }
+    border-radius: 50%;
+    font-size: 5rem; }
 
 .carousel, .carousel-inner, .carousel-inner .item {
   min-height: 400px;
@@ -7132,13 +7136,13 @@ a.carousel-control.right, a.carousel-control.left {
 .portfolio-description-text h4 {
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 55px; }
+  padding-bottom: 25px; }
 .portfolio-description-text p {
-  padding-top: 20px;
+  padding: 20px;
   letter-spacing: 0.1em;
   color: darkgray; }
   .portfolio-description-text p:first-of-type {
-    padding-top: 50px;
+    padding-top: 25px;
     display: inline-block;
     float: right; }
     .portfolio-description-text p:first-of-type:first-letter {
@@ -7320,6 +7324,11 @@ img.thumbnail {
   padding-left: 0px;
   padding-right: 0px;
   padding: 1px; }
+
+@media screen and (min-width: 769px) {
+  .portfolio-description-text p {
+    padding: 0px 80px 10px; }
+ }
 
 /*  PAGE: MEMBERS */
 #mmbr__profile {

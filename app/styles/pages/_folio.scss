@@ -19,8 +19,7 @@
     z-index: 2;
     @include transition(all, 3s, ease,0);;
     span {
-      color: white;
-      background-color: white;
+      color: $accent_green;
       opacity: 1;
       border-radius: 50%;
     }
