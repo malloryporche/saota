@@ -5250,6 +5250,9 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 0;
   margin-left: 0; }
 
+a#navbar-brand.navbar-brand {
+  padding-left: 15px; }
+
 @media screen and (min-width: 769px) {
   .container > .navbar-header {
     margin-left: 15px;
