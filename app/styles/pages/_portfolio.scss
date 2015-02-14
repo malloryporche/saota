@@ -227,8 +227,10 @@ img.thumbnail {
   }
 @media screen and (min-width: 768px) {
   section#portfolio-description-img-information #social_media-share {
-    padding: 60px 0;
+    padding: 40px 0;
     border-top: 2px solid $primary_color;
+    margin-top: 40px;
+    margin-left: 20px;
   }
   #gallery_info {
     border-bottom: 2px solid transparent;
@@ -246,6 +248,13 @@ img.thumbnail {
   .portfolio-description-text {
     p {
       padding: 0px 80px 10px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .post-navigation {
+    a {
+      margin: 10px;
     }
   }
 }
