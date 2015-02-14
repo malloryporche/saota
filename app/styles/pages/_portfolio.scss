@@ -7,24 +7,28 @@
 header #slider_fullwidth {
   padding: 0;
 }
-
+main#slider_fw.container-fluid {
+  margin-top: -100px;
+}
 .carousel-fade {
   .carousel-inner {
     .item {
-	@include transition(opacity, 3.0s, ease-out, 0);;
+	@include transition(opacity, 1.0s, ease-out, 0);;
       opacity: 0;
       transition-property: opacity;
 	width: 100%;
 	margin: 0 auto;
-	height: 900px;	
+	min-height: 900px;	
 	.center-block {
 		padding: 0;
+    background-size: cover;
 	}
     }
 
     .active {
       opacity: 1;
-      @include transition(opacity, 3.0s, ease,0);;
+      @include transition(opacity, 1.0s, ease,1s);;
+      background-size: cover;
     }
 
     .active.left,
@@ -32,13 +36,16 @@ header #slider_fullwidth {
       left: 0;
       opacity: 0;
       z-index: 1;
-       @include transition(opacity, 3s, ease-in,0.5s);;
+       @include transition(opacity, 2s, ease-in,1s);;
+       background-size: cover;
       
     }
 
     .next.left,
     .prev.right {
       opacity: 1;
+       @include transition(opacity, 2s, ease-in,0s);;
+      background-size: cover;
     }
   }
 
@@ -57,8 +64,7 @@ header #slider_fullwidth {
 .carousel, 
 .carousel-inner, 
 .carousel-inner .item {
-  min-height: 400px;
-  max-height: 750px;
+  height: 100%;
 }
 
 @media screen and (min-width: 1026px) {
@@ -99,6 +105,7 @@ a.carousel-control.right, a.carousel-control.left {
 }
 
 .portfolio-description-text {
+      margin: 45px 45px 0;
   h1 {
     text-align: center;
     letter-spacing: 0.2em;
@@ -112,7 +119,6 @@ a.carousel-control.right, a.carousel-control.left {
     letter-spacing: 3px;
   }
   p {
-    padding: 20px;
     letter-spacing: 0.1em;
     color: darkgray;
     &:first-of-type {
@@ -139,15 +145,19 @@ a.carousel-control.right, a.carousel-control.left {
   margin-bottom: 20px;
   h5 {
     text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
     padding-bottom: 0px;
     margin-bottom: -2px;
     color: $primary_color;
   }
   h6 {
+    letter-spacing: 2px;
+    text-align: center;
     color: gray;
   }
 }
-div#social_media-share {
+#portfolio-description-img-information div#social_media-share {
   padding: 0;
 }
 div.soc-media-links {
@@ -216,8 +226,7 @@ img.thumbnail {
     margin: 0 auto 40px;
   }
 @media screen and (min-width: 768px) {
-  divportfolio-description-img-information #social_media-share {
-    margin: 40px 0 0;
+  section#portfolio-description-img-information #social_media-share {
     padding: 60px 0;
     border-top: 2px solid $primary_color;
   }

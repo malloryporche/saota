@@ -9,12 +9,18 @@ row.member__header {
 section.member__header {
 	text-align: center;
 	h1 {
-		padding: 100px 0 80px;
+		padding: 100px 0 0;
 		font-weight: 800;
 		span:last-of-type {
 			text-transform: lowercase; 
 			font-weight: 400;
 		}
+	}
+	hr {
+		border: 5px solid $secondary_color;
+		max-width: 20%;
+		margin: 20px auto 60px;
+		padding: 0;
 	}
 	img {
 		max-width: 100%;
