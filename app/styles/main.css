@@ -4964,7 +4964,7 @@ html, body, .container {
 
 main {
   padding-top: 50px;
-  margin-bottom: 355px;
+  margin-bottom: 490px;
   background-color: #fff; }
 
 .row {
@@ -5274,7 +5274,8 @@ section svg {
   width: 100%;
   -webkit-transform: rotate(180deg);
   background-color: #2C2F36;
-  fill: white; }
+  fill: white;
+  position: absolute; }
 
 #footer {
   margin-top: 100px;
@@ -7378,19 +7379,19 @@ main#about_page {
   margin-bottom: 1200px;
   background: white; }
 
-#about img {
+#abt_team img {
   width: 100%; }
-#about h1, #about p {
+#abt_team h1, #abt_team p {
   text-align: center;
   padding: 40px 60px 5px; }
-#about h1 {
+#abt_team h1 {
   letter-spacing: 8px; }
-  #about h1 span {
+  #abt_team h1 span {
     font-weight: bolder; }
-#about p span {
+#abt_team p span {
   color: #FF512F;
   font-weight: bolder; }
-#about hr {
+#abt_team hr {
   max-width: 25%;
   border: 5px solid #c2d848;
   margin: 0 auto;
