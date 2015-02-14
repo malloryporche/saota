@@ -4960,7 +4960,9 @@ html, body, .container {
   padding: 0; }
 
 main {
-  padding-top: 50px; }
+  padding-top: 50px;
+  margin-bottom: 355px;
+  background-color: #fff; }
 
 .row {
   margin: 0;
@@ -5262,8 +5264,15 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 15px; }
  }
 
+section svg {
+  width: 100%;
+  -webkit-transform: rotate(180deg);
+  background-color: #2C2F36;
+  fill: white; }
+
 #footer {
-  position: aboslute;
+  z-index: -1;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;

@@ -7,6 +7,8 @@ html, body, .container {
 }
 main {
 	padding-top: 50px;
+	margin-bottom: 355px;
+	background-color: #fff;
 }
 .row {
 	margin: 0;
@@ -138,9 +140,17 @@ h1, h2, h3, h4, h5, h6, p {
 		padding: 15px;
 	}
 }
+//SVG //
+section svg {
+	width: 100%;
+	-webkit-transform: rotate(180deg);
+	background-color: $primary_background;
+	fill: white;
+}
 //FOOTER //
 #footer {
-	position: aboslute;
+	z-index: -1;
+	position: fixed;
 	bottom: 0;
 	right: 0;
 	left: 0;
