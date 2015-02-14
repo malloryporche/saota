@@ -64,7 +64,7 @@ section#services {
 	}
 }
 
-section#team {
+section#abt_team {
 	background-color: white;
 	h1 {
 		letter-spacing: 8px;
@@ -72,9 +72,11 @@ section#team {
 		margin-top: 40px;
 		text-align: center;
 	}
-	hr {
+	h1 ~ hr {
 		max-width: 25%;
 		border: 5px solid $accent_green;
+		margin: 0 auto;
+		padding: 0;
 	}
 	p {
 		padding: 80px;
