@@ -6994,7 +6994,7 @@ body#folio section.row {
 a.carousel-control.right, a.carousel-control.left {
   background-image: none; }
 
-hr {
+.portfolio-description-text hr {
   max-width: 45%;
   margin: 20px auto;
   border: 1.5px solid #313139; }
