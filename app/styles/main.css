@@ -7373,6 +7373,23 @@ img.thumbnail {
   width: 100%;
   border: 1px solid white; }
 
+#about img {
+  width: 100%; }
+#about h1, #about p {
+  text-align: center;
+  padding: 40px 60px 5px; }
+#about h1 {
+  letter-spacing: 8px; }
+  #about h1 span {
+    font-weight: bolder; }
+#about p span {
+  color: #FF512F; }
+#about p hr {
+  max-width: 25%;
+  border: 5px solid #c2d848;
+  margin: 0 auto;
+  padding: 0; }
+
 /*  PAGE: MEMBERS */
 #mmbr__profile {
   padding-bottom: 120px; }

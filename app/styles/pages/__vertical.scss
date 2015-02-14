@@ -4,3 +4,30 @@
 		border: 1px solid white;
 	}
 }
+
+#about {
+	img {
+		width: 100%;
+	}
+	h1, p {
+		text-align: center;
+		padding: 40px 60px 5px;
+	}
+	h1 {
+		letter-spacing: 8px;
+		span {
+			font-weight: bolder;
+		}
+	}
+	p {
+		span {
+			color: $secondary_color;
+		}
+	hr {
+		max-width: 25%;
+		border: 5px solid $accent_green;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+}
