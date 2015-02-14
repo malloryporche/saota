@@ -7383,12 +7383,28 @@ img.thumbnail {
   #about h1 span {
     font-weight: bolder; }
 #about p span {
-  color: #FF512F; }
-#about p hr {
+  color: #FF512F;
+  font-weight: bolder; }
+#about hr {
   max-width: 25%;
   border: 5px solid #c2d848;
   margin: 0 auto;
   padding: 0; }
+
+#services {
+  text-align: center; }
+  #services hr {
+    max-width: 25%;
+    border: 5px solid #c2d848;
+    margin: 0 auto;
+    padding: 0; }
+  #services img {
+    display: inline-block;
+    margin: 0 auto; }
+  #services .service_wrap {
+    margin: 50px auto;
+    padding: 60px 45px;
+    border: 1px solid #2C2F36; }
 
 /*  PAGE: MEMBERS */
 #mmbr__profile {
