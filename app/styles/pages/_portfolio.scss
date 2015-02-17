@@ -232,7 +232,12 @@ img.thumbnail {
   border: 1px solid transparent;
     max-width: 100%;
   }
-
+@media screen and (max-width: 768px) {
+  section.thumbnail_gallery {
+    margin-bottom: 250px;
+    padding-bottom: 50px;
+  }
+}
 @media screen and (min-width: 768px) {
   section#portfolio-description-img-information #social_media-share {
     padding: 40px 0;
