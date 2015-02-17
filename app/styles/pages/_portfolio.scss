@@ -11,6 +11,9 @@ main#slider_fw.container-fluid {
   margin-top: -100px;
   padding-bottom: 190px;
 }
+section.thumbnail_gallery {
+  margin-bottom: 250px;
+}
 .carousel-fade {
   .carousel-inner {
     .item {
@@ -243,8 +246,10 @@ img.thumbnail {
     padding: 40px 0;
     border-top: 2px solid $primary_color;
     margin-top: 40px;
-    
   }
+  nav.post-navigation.next {
+  margin-top: 0;
+}
   #gallery_info {
     border-bottom: 2px solid transparent;
   }

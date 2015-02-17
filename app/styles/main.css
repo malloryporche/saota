@@ -7135,6 +7135,9 @@ p.portfolio_widget_title_slider-animation {
   text-align: center;
   width: 100%; }
 
+nav.post-navigation.next {
+  margin-top: -100px; }
+
 .portfolio-description-text hr {
   max-width: 45%;
   margin: 20px auto;
@@ -7146,6 +7149,9 @@ header #slider_fullwidth {
 main#slider_fw.container-fluid {
   margin-top: -100px;
   padding-bottom: 190px; }
+
+section.thumbnail_gallery {
+  margin-bottom: 250px; }
 
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
@@ -7532,6 +7538,9 @@ img.thumbnail {
     padding: 40px 0;
     border-top: 2px solid #313139;
     margin-top: 40px; }
+
+  nav.post-navigation.next {
+    margin-top: 0; }
 
   #gallery_info {
     border-bottom: 2px solid transparent; }
