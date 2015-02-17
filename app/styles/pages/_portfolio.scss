@@ -270,5 +270,12 @@ img.thumbnail {
   }
   .thumbnail_gallery {
     padding-top: 60px;
+    margin-top: 60px;
+  }
+}
+
+#vertical_fullwidth {
+  div:first-of-type {
+    margin-top: 50px;
   }
 }

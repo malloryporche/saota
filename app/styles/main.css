@@ -7550,8 +7550,12 @@ img.thumbnail {
     margin: 10px; }
 
   .thumbnail_gallery {
-    padding-top: 60px; }
+    padding-top: 60px;
+    margin-top: 60px; }
  }
+
+#vertical_fullwidth div:first-of-type {
+  margin-top: 50px; }
 
 #vertical_fullwidth img {
   width: 100%;
