@@ -119,3 +119,46 @@ body#folio section.row {
 a.carousel-control.right, a.carousel-control.left {
 	background-image: none; 
 }
+.thumbnail_gallery .wrap {
+  position: relative;
+  text-align: center;
+}
+.thumbnail_gallery .img-wrap {
+  position: absolute;
+  overflow: hidden;
+  img {
+    -webkit-transform: scale(1);
+  @include transition(-webkit-transform, .5s, ease-out, 0);;
+  }
+  &:hover {
+    img {
+      -webkit-transform: scale(1.3);
+      @include transition(-webkit-transform, .5s, ease-in, 0);;
+    }
+    h2 {
+      opacity: 0.75;
+      font-weight: 700;
+      letter-spacing: 2px;
+      background-color: $accent_green;
+      @include transition(background-color, .5s, ease-in, 0);;
+      @include transition(opacity, 0.5s, ease-in, 0);;
+    }
+  }
+}
+
+.portfolio_widget_title_slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  left: 0;
+  opacity: 0;
+  top: 0;
+}
+p.portfolio_widget_title_slider-animation {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  width: 100%;
+
+}

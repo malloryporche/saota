@@ -9,6 +9,7 @@ header #slider_fullwidth {
 }
 main#slider_fw.container-fluid {
   margin-top: -100px;
+  padding-bottom: 190px;
 }
 .carousel-fade {
   .carousel-inner {
@@ -237,7 +238,7 @@ img.thumbnail {
     padding: 40px 0;
     border-top: 2px solid $primary_color;
     margin-top: 40px;
-    margin-left: 20px;
+    
   }
   #gallery_info {
     border-bottom: 2px solid transparent;
@@ -259,6 +260,9 @@ img.thumbnail {
   }
 }
 @media screen and (min-width: 1200px) {
+   section#portfolio-description-img-information #social_media-share {
+    margin-left: 20px;
+  }
   .post-navigation {
     a {
       margin: 10px;
